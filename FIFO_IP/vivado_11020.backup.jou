@@ -1,0 +1,84 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Mon Nov  2 18:18:53 2020
+# Process ID: 11020
+# Current directory: F:/FPGA/Design/FIFO_IP
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent16412 F:\FPGA\Design\FIFO_IP\FIFO_IP.xpr
+# Log file: F:/FPGA/Design/FIFO_IP/vivado.log
+# Journal file: F:/FPGA/Design/FIFO_IP\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project F:/FPGA/Design/FIFO_IP/FIFO_IP.xpr
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs synth_1 -jobs 16
+wait_on_run synth_1
+open_run synth_1 -name synth_1
+close_design
+synth_design -rtl -name rtl_1
+reset_run synth_1
+launch_runs synth_1 -jobs 16
+wait_on_run synth_1
+open_run synth_1 -name synth_1
+startgroup
+set_property interface FIFO_READ_26049 [get_ports [list  {wr_data_count[4]} {wr_data_count[3]} {wr_data_count[2]} {wr_data_count[1]} {wr_data_count[0]} {rd_data_count[4]} {rd_data_count[3]} {rd_data_count[2]} {rd_data_count[1]} {rd_data_count[0]}]]
+set_property interface FIFO_READ_26049 [get_ports [list  wr_rst_busy sys_rst_n rd_rst_busy full sys_clk wr_rst_busy sys_rst_n rd_rst_busy full sys_clk empty]]
+endgroup
+set_property IOSTANDARD LVCMOS33 [get_ports [list {dout[7]} {dout[6]} {dout[5]} {dout[4]} {dout[3]} {dout[2]} {dout[1]} {dout[0]} {rd_data_count[4]} {rd_data_count[3]} {rd_data_count[2]} {rd_data_count[1]} {rd_data_count[0]} {wr_data_count[4]} {wr_data_count[3]} {wr_data_count[2]} {wr_data_count[1]} {wr_data_count[0]} empty full rd_rst_busy sys_clk sys_rst_n wr_rst_busy]]
+close_design
+close_design
+synth_design -rtl -name rtl_1
+close_design
+reset_run synth_1
+launch_runs synth_1 -jobs 16
+wait_on_run synth_1
+open_run synth_1 -name synth_1
+synth_design -rtl -name rtl_1
+refresh_design
+update_compile_order -fileset sources_1
+refresh_design
+refresh_design
+reset_run synth_1
+launch_runs synth_1 -jobs 16
+wait_on_run synth_1
+current_design synth_1
+set_property IOSTANDARD LVCMOS33 [get_ports [list {fifo_rd_data[7]} {fifo_rd_data[6]} {fifo_rd_data[5]} {fifo_rd_data[4]} {fifo_rd_data[3]} {fifo_rd_data[2]} {fifo_rd_data[1]} {fifo_rd_data[0]} empty]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list full]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list sys_clk]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list {rd_data_count[4]} {rd_data_count[3]} {rd_data_count[2]} {rd_data_count[1]} {rd_data_count[0]}]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list {wr_data_count[4]} {wr_data_count[3]} {wr_data_count[2]} {wr_data_count[1]} {wr_data_count[0]}]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list rd_rst_busy]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list sys_rst_n]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list wr_rst_busy]]
+file mkdir F:/FPGA/Design/FIFO_IP/FIFO_IP.srcs/constrs_1/new
+close [ open F:/FPGA/Design/FIFO_IP/FIFO_IP.srcs/constrs_1/new/FIFO_IP.xdc w ]
+add_files -fileset constrs_1 F:/FPGA/Design/FIFO_IP/FIFO_IP.srcs/constrs_1/new/FIFO_IP.xdc
+set_property target_constrs_file F:/FPGA/Design/FIFO_IP/FIFO_IP.srcs/constrs_1/new/FIFO_IP.xdc [current_fileset -constrset]
+save_constraints -force
+synth_design -rtl -name rtl_2
+update_compile_order -fileset sources_1
+synth_design -rtl -name rtl_2
+close_design
+close_design
+refresh_design
+reset_run synth_1
+launch_runs synth_1 -jobs 16
+wait_on_run synth_1
+open_run synth_1 -name synth_1
+reset_run synth_1
+launch_runs synth_1 -jobs 16
+wait_on_run synth_1
+close_design
+refresh_design
+open_run synth_1 -name synth_1
+current_design rtl_1
+close_design
+close_design
+reset_run synth_1
+launch_runs synth_1 -jobs 16
+wait_on_run synth_1
+open_run synth_1 -name synth_1
+synth_design -rtl -name rtl_1
+synth_design -rtl -name rtl_2

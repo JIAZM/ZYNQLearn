@@ -1,0 +1,1301 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Mon Nov  2 18:18:53 2020
+# Process ID: 11020
+# Current directory: F:/FPGA/Design/FIFO_IP
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent16412 F:\FPGA\Design\FIFO_IP\FIFO_IP.xpr
+# Log file: F:/FPGA/Design/FIFO_IP/vivado.log
+# Journal file: F:/FPGA/Design/FIFO_IP\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project F:/FPGA/Design/FIFO_IP/FIFO_IP.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'E:/VIVADO2018/Install/Vivado/2018.3/data/ip'.
+open_project: Time (s): cpu = 00:00:11 ; elapsed = 00:00:06 . Memory (MB): peak = 791.355 ; gain = 134.523
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs synth_1 -jobs 16
+[Mon Nov  2 18:22:50 2020] Launched synth_1...
+Run output will be captured here: F:/FPGA/Design/FIFO_IP/FIFO_IP.runs/synth_1/runme.log
+open_run synth_1 -name synth_1
+Design is defaulting to impl run constrset: constrs_1
+Design is defaulting to synth run part: xc7z010clg400-1
+INFO: [Project 1-454] Reading design checkpoint 'f:/FPGA/Design/FIFO_IP/FIFO_IP.srcs/sources_1/ip/fifo_generator_0/fifo_generator_0.dcp' for cell 'your_instance_name'
+INFO: [Netlist 29-17] Analyzing 1 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2018.3
+INFO: [Device 21-403] Loading part xc7z010clg400-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [f:/FPGA/Design/FIFO_IP/FIFO_IP.srcs/sources_1/ip/fifo_generator_0/fifo_generator_0.xdc] for cell 'your_instance_name/U0'
+Finished Parsing XDC File [f:/FPGA/Design/FIFO_IP/FIFO_IP.srcs/sources_1/ip/fifo_generator_0/fifo_generator_0.xdc] for cell 'your_instance_name/U0'
+Parsing XDC File [f:/FPGA/Design/FIFO_IP/FIFO_IP.srcs/sources_1/ip/fifo_generator_0/fifo_generator_0_clocks.xdc] for cell 'your_instance_name/U0'
+Finished Parsing XDC File [f:/FPGA/Design/FIFO_IP/FIFO_IP.srcs/sources_1/ip/fifo_generator_0/fifo_generator_0_clocks.xdc] for cell 'your_instance_name/U0'
+Sourcing Tcl File [E:/VIVADO2018/Install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'your_instance_name/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst'
+Finished Sourcing Tcl File [E:/VIVADO2018/Install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'your_instance_name/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst'
+Sourcing Tcl File [E:/VIVADO2018/Install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'your_instance_name/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst'
+Finished Sourcing Tcl File [E:/VIVADO2018/Install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'your_instance_name/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst'
+Sourcing Tcl File [E:/VIVADO2018/Install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'your_instance_name/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.gic_rst.xpm_cdc_single_inst_rrst_wr'
+Finished Sourcing Tcl File [E:/VIVADO2018/Install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'your_instance_name/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.gic_rst.xpm_cdc_single_inst_rrst_wr'
+Sourcing Tcl File [E:/VIVADO2018/Install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'your_instance_name/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.gic_rst.xpm_cdc_single_inst_wrst_rd'
+Finished Sourcing Tcl File [E:/VIVADO2018/Install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'your_instance_name/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.gic_rst.xpm_cdc_single_inst_wrst_rd'
+Sourcing Tcl File [E:/VIVADO2018/Install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_sync_rst.tcl] for cell 'your_instance_name/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.gic_rst.xpm_cdc_sync_rst_inst_wrst'
+Finished Sourcing Tcl File [E:/VIVADO2018/Install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_sync_rst.tcl] for cell 'your_instance_name/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.gic_rst.xpm_cdc_sync_rst_inst_wrst'
+Sourcing Tcl File [E:/VIVADO2018/Install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_sync_rst.tcl] for cell 'your_instance_name/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.xpm_cdc_sync_rst_inst_wrst'
+Finished Sourcing Tcl File [E:/VIVADO2018/Install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_sync_rst.tcl] for cell 'your_instance_name/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.xpm_cdc_sync_rst_inst_wrst'
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1680.609 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+open_run: Time (s): cpu = 00:00:27 ; elapsed = 00:00:17 . Memory (MB): peak = 1781.945 ; gain = 889.117
+close_design
+synth_design -rtl -name rtl_1
+Command: synth_design -rtl -name rtl_1
+Starting synth_design
+Using part: xc7z010clg400-1
+Top: FIFO_IP
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1816.633 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'FIFO_IP' [F:/FPGA/Design/FIFO_IP/FIFO_IP.srcs/sources_1/new/FIFO_IP.v:1]
+INFO: [Synth 8-6157] synthesizing module 'FIFO_WR' [F:/FPGA/Design/FIFO_IP/FIFO_IP.srcs/sources_1/new/FIFO_WR.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'FIFO_WR' (1#1) [F:/FPGA/Design/FIFO_IP/FIFO_IP.srcs/sources_1/new/FIFO_WR.v:1]
+INFO: [Synth 8-6157] synthesizing module 'FIFO_RD' [F:/FPGA/Design/FIFO_IP/FIFO_IP.srcs/sources_1/new/FIFO_RD.v:1]
+WARNING: [Synth 8-6014] Unused sequential element rd_data_reg was removed.  [F:/FPGA/Design/FIFO_IP/FIFO_IP.srcs/sources_1/new/FIFO_RD.v:56]
+INFO: [Synth 8-6155] done synthesizing module 'FIFO_RD' (2#1) [F:/FPGA/Design/FIFO_IP/FIFO_IP.srcs/sources_1/new/FIFO_RD.v:1]
+INFO: [Synth 8-6157] synthesizing module 'fifo_generator_0' [F:/FPGA/Design/FIFO_IP/.Xil/Vivado-11020-DESKTOP-CD1624M/realtime/fifo_generator_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'fifo_generator_0' (3#1) [F:/FPGA/Design/FIFO_IP/.Xil/Vivado-11020-DESKTOP-CD1624M/realtime/fifo_generator_0_stub.v:6]
+WARNING: [Synth 8-3848] Net fifo_rd_data in module/entity FIFO_IP does not have driver. [F:/FPGA/Design/FIFO_IP/FIFO_IP.srcs/sources_1/new/FIFO_IP.v:19]
+INFO: [Synth 8-6155] done synthesizing module 'FIFO_IP' (4#1) [F:/FPGA/Design/FIFO_IP/FIFO_IP.srcs/sources_1/new/FIFO_IP.v:1]
+WARNING: [Synth 8-3331] design FIFO_RD has unconnected port fifo_rd_data[7]
+WARNING: [Synth 8-3331] design FIFO_RD has unconnected port fifo_rd_data[6]
+WARNING: [Synth 8-3331] design FIFO_RD has unconnected port fifo_rd_data[5]
+WARNING: [Synth 8-3331] design FIFO_RD has unconnected port fifo_rd_data[4]
+WARNING: [Synth 8-3331] design FIFO_RD has unconnected port fifo_rd_data[3]
+WARNING: [Synth 8-3331] design FIFO_RD has unconnected port fifo_rd_data[2]
+WARNING: [Synth 8-3331] design FIFO_RD has unconnected port fifo_rd_data[1]
+WARNING: [Synth 8-3331] design FIFO_RD has unconnected port fifo_rd_data[0]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 1816.633 ; gain = 0.000
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 1816.633 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 1816.633 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Project 1-454] Reading design checkpoint 'f:/FPGA/Design/FIFO_IP/FIFO_IP.srcs/sources_1/ip/fifo_generator_0/fifo_generator_0.dcp' for cell 'your_instance_name'
+INFO: [Netlist 29-17] Analyzing 1 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2018.3
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-140] Inserted 2 IBUFs to IO ports without IO buffers.
+INFO: [Opt 31-141] Inserted 22 OBUFs to IO ports without IO buffers.
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [f:/FPGA/Design/FIFO_IP/FIFO_IP.srcs/sources_1/ip/fifo_generator_0/fifo_generator_0.xdc] for cell 'your_instance_name/U0'
+Finished Parsing XDC File [f:/FPGA/Design/FIFO_IP/FIFO_IP.srcs/sources_1/ip/fifo_generator_0/fifo_generator_0.xdc] for cell 'your_instance_name/U0'
+Parsing XDC File [f:/FPGA/Design/FIFO_IP/FIFO_IP.srcs/sources_1/ip/fifo_generator_0/fifo_generator_0_clocks.xdc] for cell 'your_instance_name/U0'
+Finished Parsing XDC File [f:/FPGA/Design/FIFO_IP/FIFO_IP.srcs/sources_1/ip/fifo_generator_0/fifo_generator_0_clocks.xdc] for cell 'your_instance_name/U0'
+Sourcing Tcl File [E:/VIVADO2018/Install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'your_instance_name/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst'
+Finished Sourcing Tcl File [E:/VIVADO2018/Install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'your_instance_name/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst'
+Sourcing Tcl File [E:/VIVADO2018/Install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'your_instance_name/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst'
+Finished Sourcing Tcl File [E:/VIVADO2018/Install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'your_instance_name/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst'
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [E:/VIVADO2018/Install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/FIFO_IP_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/FIFO_IP_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Sourcing Tcl File [E:/VIVADO2018/Install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'your_instance_name/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.gic_rst.xpm_cdc_single_inst_rrst_wr'
+Finished Sourcing Tcl File [E:/VIVADO2018/Install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'your_instance_name/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.gic_rst.xpm_cdc_single_inst_rrst_wr'
+Sourcing Tcl File [E:/VIVADO2018/Install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'your_instance_name/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.gic_rst.xpm_cdc_single_inst_wrst_rd'
+Finished Sourcing Tcl File [E:/VIVADO2018/Install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'your_instance_name/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.gic_rst.xpm_cdc_single_inst_wrst_rd'
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [E:/VIVADO2018/Install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/FIFO_IP_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/FIFO_IP_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Sourcing Tcl File [E:/VIVADO2018/Install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_sync_rst.tcl] for cell 'your_instance_name/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.gic_rst.xpm_cdc_sync_rst_inst_wrst'
+Finished Sourcing Tcl File [E:/VIVADO2018/Install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_sync_rst.tcl] for cell 'your_instance_name/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.gic_rst.xpm_cdc_sync_rst_inst_wrst'
+Sourcing Tcl File [E:/VIVADO2018/Install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_sync_rst.tcl] for cell 'your_instance_name/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.xpm_cdc_sync_rst_inst_wrst'
+Finished Sourcing Tcl File [E:/VIVADO2018/Install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_sync_rst.tcl] for cell 'your_instance_name/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.xpm_cdc_sync_rst_inst_wrst'
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1851.168 ; gain = 0.000
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1851.168 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+RTL Elaboration Complete:  : Time (s): cpu = 00:00:08 ; elapsed = 00:00:05 . Memory (MB): peak = 1861.812 ; gain = 45.180
+19 Infos, 10 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:09 ; elapsed = 00:00:06 . Memory (MB): peak = 1861.812 ; gain = 45.180
+reset_run synth_1
+launch_runs synth_1 -jobs 16
+[Mon Nov  2 18:32:31 2020] Launched synth_1...
+Run output will be captured here: F:/FPGA/Design/FIFO_IP/FIFO_IP.runs/synth_1/runme.log
+open_run synth_1 -name synth_1
+Design is defaulting to impl run constrset: constrs_1
+Design is defaulting to synth run part: xc7z010clg400-1
+INFO: [Project 1-454] Reading design checkpoint 'f:/FPGA/Design/FIFO_IP/FIFO_IP.srcs/sources_1/ip/fifo_generator_0/fifo_generator_0.dcp' for cell 'your_instance_name'
+INFO: [Netlist 29-17] Analyzing 1 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2018.3
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [f:/FPGA/Design/FIFO_IP/FIFO_IP.srcs/sources_1/ip/fifo_generator_0/fifo_generator_0.xdc] for cell 'your_instance_name/U0'
+Finished Parsing XDC File [f:/FPGA/Design/FIFO_IP/FIFO_IP.srcs/sources_1/ip/fifo_generator_0/fifo_generator_0.xdc] for cell 'your_instance_name/U0'
+Parsing XDC File [f:/FPGA/Design/FIFO_IP/FIFO_IP.srcs/sources_1/ip/fifo_generator_0/fifo_generator_0_clocks.xdc] for cell 'your_instance_name/U0'
+Finished Parsing XDC File [f:/FPGA/Design/FIFO_IP/FIFO_IP.srcs/sources_1/ip/fifo_generator_0/fifo_generator_0_clocks.xdc] for cell 'your_instance_name/U0'
+Sourcing Tcl File [E:/VIVADO2018/Install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'your_instance_name/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst'
+Finished Sourcing Tcl File [E:/VIVADO2018/Install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'your_instance_name/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst'
+Sourcing Tcl File [E:/VIVADO2018/Install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'your_instance_name/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst'
+Finished Sourcing Tcl File [E:/VIVADO2018/Install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'your_instance_name/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst'
+Sourcing Tcl File [E:/VIVADO2018/Install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'your_instance_name/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.gic_rst.xpm_cdc_single_inst_rrst_wr'
+Finished Sourcing Tcl File [E:/VIVADO2018/Install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'your_instance_name/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.gic_rst.xpm_cdc_single_inst_rrst_wr'
+Sourcing Tcl File [E:/VIVADO2018/Install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'your_instance_name/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.gic_rst.xpm_cdc_single_inst_wrst_rd'
+Finished Sourcing Tcl File [E:/VIVADO2018/Install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'your_instance_name/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.gic_rst.xpm_cdc_single_inst_wrst_rd'
+Sourcing Tcl File [E:/VIVADO2018/Install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_sync_rst.tcl] for cell 'your_instance_name/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.gic_rst.xpm_cdc_sync_rst_inst_wrst'
+Finished Sourcing Tcl File [E:/VIVADO2018/Install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_sync_rst.tcl] for cell 'your_instance_name/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.gic_rst.xpm_cdc_sync_rst_inst_wrst'
+Sourcing Tcl File [E:/VIVADO2018/Install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_sync_rst.tcl] for cell 'your_instance_name/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.xpm_cdc_sync_rst_inst_wrst'
+Finished Sourcing Tcl File [E:/VIVADO2018/Install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_sync_rst.tcl] for cell 'your_instance_name/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.xpm_cdc_sync_rst_inst_wrst'
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2155.562 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+startgroup
+set_property interface FIFO_READ_26049 [get_ports [list  {wr_data_count[4]} {wr_data_count[3]} {wr_data_count[2]} {wr_data_count[1]} {wr_data_count[0]} {rd_data_count[4]} {rd_data_count[3]} {rd_data_count[2]} {rd_data_count[1]} {rd_data_count[0]}]]
+set_property interface FIFO_READ_26049 [get_ports [list  wr_rst_busy sys_rst_n rd_rst_busy full sys_clk wr_rst_busy sys_rst_n rd_rst_busy full sys_clk empty]]
+endgroup
+set_property IOSTANDARD LVCMOS33 [get_ports [list {dout[7]} {dout[6]} {dout[5]} {dout[4]} {dout[3]} {dout[2]} {dout[1]} {dout[0]} {rd_data_count[4]} {rd_data_count[3]} {rd_data_count[2]} {rd_data_count[1]} {rd_data_count[0]} {wr_data_count[4]} {wr_data_count[3]} {wr_data_count[2]} {wr_data_count[1]} {wr_data_count[0]} empty full rd_rst_busy sys_clk sys_rst_n wr_rst_busy]]
+close_design
+close_design
+synth_design -rtl -name rtl_1
+Command: synth_design -rtl -name rtl_1
+Starting synth_design
+Using part: xc7z010clg400-1
+Top: FIFO_IP
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 2155.562 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'FIFO_IP' [F:/FPGA/Design/FIFO_IP/FIFO_IP.srcs/sources_1/new/FIFO_IP.v:1]
+INFO: [Synth 8-6157] synthesizing module 'FIFO_WR' [F:/FPGA/Design/FIFO_IP/FIFO_IP.srcs/sources_1/new/FIFO_WR.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'FIFO_WR' (1#1) [F:/FPGA/Design/FIFO_IP/FIFO_IP.srcs/sources_1/new/FIFO_WR.v:1]
+INFO: [Synth 8-6157] synthesizing module 'FIFO_RD' [F:/FPGA/Design/FIFO_IP/FIFO_IP.srcs/sources_1/new/FIFO_RD.v:1]
+WARNING: [Synth 8-6014] Unused sequential element rd_data_reg was removed.  [F:/FPGA/Design/FIFO_IP/FIFO_IP.srcs/sources_1/new/FIFO_RD.v:56]
+INFO: [Synth 8-6155] done synthesizing module 'FIFO_RD' (2#1) [F:/FPGA/Design/FIFO_IP/FIFO_IP.srcs/sources_1/new/FIFO_RD.v:1]
+INFO: [Synth 8-6157] synthesizing module 'fifo_generator_0' [F:/FPGA/Design/FIFO_IP/.Xil/Vivado-11020-DESKTOP-CD1624M/realtime/fifo_generator_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'fifo_generator_0' (3#1) [F:/FPGA/Design/FIFO_IP/.Xil/Vivado-11020-DESKTOP-CD1624M/realtime/fifo_generator_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'FIFO_IP' (4#1) [F:/FPGA/Design/FIFO_IP/FIFO_IP.srcs/sources_1/new/FIFO_IP.v:1]
+WARNING: [Synth 8-3331] design FIFO_RD has unconnected port fifo_rd_data[7]
+WARNING: [Synth 8-3331] design FIFO_RD has unconnected port fifo_rd_data[6]
+WARNING: [Synth 8-3331] design FIFO_RD has unconnected port fifo_rd_data[5]
+WARNING: [Synth 8-3331] design FIFO_RD has unconnected port fifo_rd_data[4]
+WARNING: [Synth 8-3331] design FIFO_RD has unconnected port fifo_rd_data[3]
+WARNING: [Synth 8-3331] design FIFO_RD has unconnected port fifo_rd_data[2]
+WARNING: [Synth 8-3331] design FIFO_RD has unconnected port fifo_rd_data[1]
+WARNING: [Synth 8-3331] design FIFO_RD has unconnected port fifo_rd_data[0]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 2155.562 ; gain = 0.000
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 2155.562 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 2155.562 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Project 1-454] Reading design checkpoint 'f:/FPGA/Design/FIFO_IP/FIFO_IP.srcs/sources_1/ip/fifo_generator_0/fifo_generator_0.dcp' for cell 'your_instance_name'
+INFO: [Netlist 29-17] Analyzing 1 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2018.3
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-140] Inserted 2 IBUFs to IO ports without IO buffers.
+INFO: [Opt 31-141] Inserted 22 OBUFs to IO ports without IO buffers.
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [f:/FPGA/Design/FIFO_IP/FIFO_IP.srcs/sources_1/ip/fifo_generator_0/fifo_generator_0.xdc] for cell 'your_instance_name/U0'
+Finished Parsing XDC File [f:/FPGA/Design/FIFO_IP/FIFO_IP.srcs/sources_1/ip/fifo_generator_0/fifo_generator_0.xdc] for cell 'your_instance_name/U0'
+Parsing XDC File [f:/FPGA/Design/FIFO_IP/FIFO_IP.srcs/sources_1/ip/fifo_generator_0/fifo_generator_0_clocks.xdc] for cell 'your_instance_name/U0'
+Finished Parsing XDC File [f:/FPGA/Design/FIFO_IP/FIFO_IP.srcs/sources_1/ip/fifo_generator_0/fifo_generator_0_clocks.xdc] for cell 'your_instance_name/U0'
+Sourcing Tcl File [E:/VIVADO2018/Install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'your_instance_name/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst'
+Finished Sourcing Tcl File [E:/VIVADO2018/Install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'your_instance_name/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst'
+Sourcing Tcl File [E:/VIVADO2018/Install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'your_instance_name/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst'
+Finished Sourcing Tcl File [E:/VIVADO2018/Install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'your_instance_name/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst'
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [E:/VIVADO2018/Install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/FIFO_IP_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/FIFO_IP_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Sourcing Tcl File [E:/VIVADO2018/Install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'your_instance_name/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.gic_rst.xpm_cdc_single_inst_rrst_wr'
+Finished Sourcing Tcl File [E:/VIVADO2018/Install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'your_instance_name/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.gic_rst.xpm_cdc_single_inst_rrst_wr'
+Sourcing Tcl File [E:/VIVADO2018/Install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'your_instance_name/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.gic_rst.xpm_cdc_single_inst_wrst_rd'
+Finished Sourcing Tcl File [E:/VIVADO2018/Install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'your_instance_name/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.gic_rst.xpm_cdc_single_inst_wrst_rd'
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [E:/VIVADO2018/Install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/FIFO_IP_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/FIFO_IP_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Sourcing Tcl File [E:/VIVADO2018/Install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_sync_rst.tcl] for cell 'your_instance_name/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.gic_rst.xpm_cdc_sync_rst_inst_wrst'
+Finished Sourcing Tcl File [E:/VIVADO2018/Install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_sync_rst.tcl] for cell 'your_instance_name/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.gic_rst.xpm_cdc_sync_rst_inst_wrst'
+Sourcing Tcl File [E:/VIVADO2018/Install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_sync_rst.tcl] for cell 'your_instance_name/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.xpm_cdc_sync_rst_inst_wrst'
+Finished Sourcing Tcl File [E:/VIVADO2018/Install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_sync_rst.tcl] for cell 'your_instance_name/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.xpm_cdc_sync_rst_inst_wrst'
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 2155.562 ; gain = 0.000
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2155.562 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+RTL Elaboration Complete:  : Time (s): cpu = 00:00:07 ; elapsed = 00:00:05 . Memory (MB): peak = 2155.562 ; gain = 0.000
+19 Infos, 9 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:07 ; elapsed = 00:00:06 . Memory (MB): peak = 2155.562 ; gain = 0.000
+close_design
+reset_run synth_1
+launch_runs synth_1 -jobs 16
+[Mon Nov  2 18:36:55 2020] Launched synth_1...
+Run output will be captured here: F:/FPGA/Design/FIFO_IP/FIFO_IP.runs/synth_1/runme.log
+open_run synth_1 -name synth_1
+Design is defaulting to impl run constrset: constrs_1
+Design is defaulting to synth run part: xc7z010clg400-1
+INFO: [Project 1-454] Reading design checkpoint 'f:/FPGA/Design/FIFO_IP/FIFO_IP.srcs/sources_1/ip/fifo_generator_0/fifo_generator_0.dcp' for cell 'your_instance_name'
+INFO: [Netlist 29-17] Analyzing 1 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2018.3
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [f:/FPGA/Design/FIFO_IP/FIFO_IP.srcs/sources_1/ip/fifo_generator_0/fifo_generator_0.xdc] for cell 'your_instance_name/U0'
+Finished Parsing XDC File [f:/FPGA/Design/FIFO_IP/FIFO_IP.srcs/sources_1/ip/fifo_generator_0/fifo_generator_0.xdc] for cell 'your_instance_name/U0'
+Parsing XDC File [f:/FPGA/Design/FIFO_IP/FIFO_IP.srcs/sources_1/ip/fifo_generator_0/fifo_generator_0_clocks.xdc] for cell 'your_instance_name/U0'
+Finished Parsing XDC File [f:/FPGA/Design/FIFO_IP/FIFO_IP.srcs/sources_1/ip/fifo_generator_0/fifo_generator_0_clocks.xdc] for cell 'your_instance_name/U0'
+Sourcing Tcl File [E:/VIVADO2018/Install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'your_instance_name/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst'
+Finished Sourcing Tcl File [E:/VIVADO2018/Install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'your_instance_name/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst'
+Sourcing Tcl File [E:/VIVADO2018/Install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'your_instance_name/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst'
+Finished Sourcing Tcl File [E:/VIVADO2018/Install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'your_instance_name/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst'
+Sourcing Tcl File [E:/VIVADO2018/Install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'your_instance_name/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.gic_rst.xpm_cdc_single_inst_rrst_wr'
+Finished Sourcing Tcl File [E:/VIVADO2018/Install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'your_instance_name/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.gic_rst.xpm_cdc_single_inst_rrst_wr'
+Sourcing Tcl File [E:/VIVADO2018/Install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'your_instance_name/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.gic_rst.xpm_cdc_single_inst_wrst_rd'
+Finished Sourcing Tcl File [E:/VIVADO2018/Install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'your_instance_name/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.gic_rst.xpm_cdc_single_inst_wrst_rd'
+Sourcing Tcl File [E:/VIVADO2018/Install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_sync_rst.tcl] for cell 'your_instance_name/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.gic_rst.xpm_cdc_sync_rst_inst_wrst'
+Finished Sourcing Tcl File [E:/VIVADO2018/Install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_sync_rst.tcl] for cell 'your_instance_name/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.gic_rst.xpm_cdc_sync_rst_inst_wrst'
+Sourcing Tcl File [E:/VIVADO2018/Install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_sync_rst.tcl] for cell 'your_instance_name/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.xpm_cdc_sync_rst_inst_wrst'
+Finished Sourcing Tcl File [E:/VIVADO2018/Install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_sync_rst.tcl] for cell 'your_instance_name/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.xpm_cdc_sync_rst_inst_wrst'
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2155.562 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+synth_design -rtl -name rtl_1
+Command: synth_design -rtl -name rtl_1
+Starting synth_design
+Using part: xc7z010clg400-1
+Top: FIFO_IP
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 2155.562 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'FIFO_IP' [F:/FPGA/Design/FIFO_IP/FIFO_IP.srcs/sources_1/new/FIFO_IP.v:1]
+INFO: [Synth 8-6157] synthesizing module 'FIFO_WR' [F:/FPGA/Design/FIFO_IP/FIFO_IP.srcs/sources_1/new/FIFO_WR.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'FIFO_WR' (1#1) [F:/FPGA/Design/FIFO_IP/FIFO_IP.srcs/sources_1/new/FIFO_WR.v:1]
+INFO: [Synth 8-6157] synthesizing module 'FIFO_RD' [F:/FPGA/Design/FIFO_IP/FIFO_IP.srcs/sources_1/new/FIFO_RD.v:1]
+WARNING: [Synth 8-6014] Unused sequential element rd_data_reg was removed.  [F:/FPGA/Design/FIFO_IP/FIFO_IP.srcs/sources_1/new/FIFO_RD.v:56]
+INFO: [Synth 8-6155] done synthesizing module 'FIFO_RD' (2#1) [F:/FPGA/Design/FIFO_IP/FIFO_IP.srcs/sources_1/new/FIFO_RD.v:1]
+INFO: [Synth 8-6157] synthesizing module 'fifo_generator_0' [F:/FPGA/Design/FIFO_IP/.Xil/Vivado-11020-DESKTOP-CD1624M/realtime/fifo_generator_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'fifo_generator_0' (3#1) [F:/FPGA/Design/FIFO_IP/.Xil/Vivado-11020-DESKTOP-CD1624M/realtime/fifo_generator_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'FIFO_IP' (4#1) [F:/FPGA/Design/FIFO_IP/FIFO_IP.srcs/sources_1/new/FIFO_IP.v:1]
+WARNING: [Synth 8-3331] design FIFO_RD has unconnected port fifo_rd_data[7]
+WARNING: [Synth 8-3331] design FIFO_RD has unconnected port fifo_rd_data[6]
+WARNING: [Synth 8-3331] design FIFO_RD has unconnected port fifo_rd_data[5]
+WARNING: [Synth 8-3331] design FIFO_RD has unconnected port fifo_rd_data[4]
+WARNING: [Synth 8-3331] design FIFO_RD has unconnected port fifo_rd_data[3]
+WARNING: [Synth 8-3331] design FIFO_RD has unconnected port fifo_rd_data[2]
+WARNING: [Synth 8-3331] design FIFO_RD has unconnected port fifo_rd_data[1]
+WARNING: [Synth 8-3331] design FIFO_RD has unconnected port fifo_rd_data[0]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 2155.562 ; gain = 0.000
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 2155.562 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 2155.562 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Project 1-454] Reading design checkpoint 'f:/FPGA/Design/FIFO_IP/FIFO_IP.srcs/sources_1/ip/fifo_generator_0/fifo_generator_0.dcp' for cell 'your_instance_name'
+INFO: [Netlist 29-17] Analyzing 1 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2018.3
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-140] Inserted 2 IBUFs to IO ports without IO buffers.
+INFO: [Opt 31-141] Inserted 22 OBUFs to IO ports without IO buffers.
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [f:/FPGA/Design/FIFO_IP/FIFO_IP.srcs/sources_1/ip/fifo_generator_0/fifo_generator_0.xdc] for cell 'your_instance_name/U0'
+Finished Parsing XDC File [f:/FPGA/Design/FIFO_IP/FIFO_IP.srcs/sources_1/ip/fifo_generator_0/fifo_generator_0.xdc] for cell 'your_instance_name/U0'
+Parsing XDC File [f:/FPGA/Design/FIFO_IP/FIFO_IP.srcs/sources_1/ip/fifo_generator_0/fifo_generator_0_clocks.xdc] for cell 'your_instance_name/U0'
+Finished Parsing XDC File [f:/FPGA/Design/FIFO_IP/FIFO_IP.srcs/sources_1/ip/fifo_generator_0/fifo_generator_0_clocks.xdc] for cell 'your_instance_name/U0'
+Sourcing Tcl File [E:/VIVADO2018/Install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'your_instance_name/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst'
+Finished Sourcing Tcl File [E:/VIVADO2018/Install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'your_instance_name/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst'
+Sourcing Tcl File [E:/VIVADO2018/Install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'your_instance_name/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst'
+Finished Sourcing Tcl File [E:/VIVADO2018/Install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'your_instance_name/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst'
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [E:/VIVADO2018/Install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/FIFO_IP_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/FIFO_IP_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Sourcing Tcl File [E:/VIVADO2018/Install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'your_instance_name/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.gic_rst.xpm_cdc_single_inst_rrst_wr'
+Finished Sourcing Tcl File [E:/VIVADO2018/Install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'your_instance_name/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.gic_rst.xpm_cdc_single_inst_rrst_wr'
+Sourcing Tcl File [E:/VIVADO2018/Install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'your_instance_name/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.gic_rst.xpm_cdc_single_inst_wrst_rd'
+Finished Sourcing Tcl File [E:/VIVADO2018/Install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'your_instance_name/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.gic_rst.xpm_cdc_single_inst_wrst_rd'
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [E:/VIVADO2018/Install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/FIFO_IP_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/FIFO_IP_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Sourcing Tcl File [E:/VIVADO2018/Install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_sync_rst.tcl] for cell 'your_instance_name/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.gic_rst.xpm_cdc_sync_rst_inst_wrst'
+Finished Sourcing Tcl File [E:/VIVADO2018/Install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_sync_rst.tcl] for cell 'your_instance_name/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.gic_rst.xpm_cdc_sync_rst_inst_wrst'
+Sourcing Tcl File [E:/VIVADO2018/Install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_sync_rst.tcl] for cell 'your_instance_name/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.xpm_cdc_sync_rst_inst_wrst'
+Finished Sourcing Tcl File [E:/VIVADO2018/Install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_sync_rst.tcl] for cell 'your_instance_name/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.xpm_cdc_sync_rst_inst_wrst'
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2225.027 ; gain = 0.000
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2225.027 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+RTL Elaboration Complete:  : Time (s): cpu = 00:00:06 ; elapsed = 00:00:05 . Memory (MB): peak = 2225.027 ; gain = 69.465
+19 Infos, 9 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:06 ; elapsed = 00:00:05 . Memory (MB): peak = 2225.027 ; gain = 69.465
+refresh_design
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:01 ; elapsed = 00:00:02 . Memory (MB): peak = 2322.188 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'FIFO_IP' [F:/FPGA/Design/FIFO_IP/FIFO_IP.srcs/sources_1/new/FIFO_IP.v:1]
+INFO: [Synth 8-6157] synthesizing module 'FIFO_RD' [F:/FPGA/Design/FIFO_IP/FIFO_IP.srcs/sources_1/new/FIFO_RD.v:1]
+WARNING: [Synth 8-6014] Unused sequential element rd_data_reg was removed.  [F:/FPGA/Design/FIFO_IP/FIFO_IP.srcs/sources_1/new/FIFO_RD.v:56]
+INFO: [Synth 8-6155] done synthesizing module 'FIFO_RD' (1#1) [F:/FPGA/Design/FIFO_IP/FIFO_IP.srcs/sources_1/new/FIFO_RD.v:1]
+INFO: [Synth 8-6157] synthesizing module 'fifo_generator_0' [F:/FPGA/Design/FIFO_IP/.Xil/Vivado-11020-DESKTOP-CD1624M/realtime/fifo_generator_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'fifo_generator_0' (2#1) [F:/FPGA/Design/FIFO_IP/.Xil/Vivado-11020-DESKTOP-CD1624M/realtime/fifo_generator_0_stub.v:6]
+WARNING: [Synth 8-3848] Net fifo_wr_data in module/entity FIFO_IP does not have driver. [F:/FPGA/Design/FIFO_IP/FIFO_IP.srcs/sources_1/new/FIFO_IP.v:19]
+WARNING: [Synth 8-3848] Net fifo_wr_en in module/entity FIFO_IP does not have driver. [F:/FPGA/Design/FIFO_IP/FIFO_IP.srcs/sources_1/new/FIFO_IP.v:17]
+INFO: [Synth 8-6155] done synthesizing module 'FIFO_IP' (3#1) [F:/FPGA/Design/FIFO_IP/FIFO_IP.srcs/sources_1/new/FIFO_IP.v:1]
+WARNING: [Synth 8-3331] design FIFO_RD has unconnected port fifo_rd_data[7]
+WARNING: [Synth 8-3331] design FIFO_RD has unconnected port fifo_rd_data[6]
+WARNING: [Synth 8-3331] design FIFO_RD has unconnected port fifo_rd_data[5]
+WARNING: [Synth 8-3331] design FIFO_RD has unconnected port fifo_rd_data[4]
+WARNING: [Synth 8-3331] design FIFO_RD has unconnected port fifo_rd_data[3]
+WARNING: [Synth 8-3331] design FIFO_RD has unconnected port fifo_rd_data[2]
+WARNING: [Synth 8-3331] design FIFO_RD has unconnected port fifo_rd_data[1]
+WARNING: [Synth 8-3331] design FIFO_RD has unconnected port fifo_rd_data[0]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 2322.188 ; gain = 0.000
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 2322.188 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 2322.188 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Project 1-454] Reading design checkpoint 'f:/FPGA/Design/FIFO_IP/FIFO_IP.srcs/sources_1/ip/fifo_generator_0/fifo_generator_0.dcp' for cell 'your_instance_name'
+INFO: [Netlist 29-17] Analyzing 1 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2018.3
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-140] Inserted 2 IBUFs to IO ports without IO buffers.
+INFO: [Opt 31-141] Inserted 22 OBUFs to IO ports without IO buffers.
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [f:/FPGA/Design/FIFO_IP/FIFO_IP.srcs/sources_1/ip/fifo_generator_0/fifo_generator_0.xdc] for cell 'your_instance_name/U0'
+Finished Parsing XDC File [f:/FPGA/Design/FIFO_IP/FIFO_IP.srcs/sources_1/ip/fifo_generator_0/fifo_generator_0.xdc] for cell 'your_instance_name/U0'
+Parsing XDC File [f:/FPGA/Design/FIFO_IP/FIFO_IP.srcs/sources_1/ip/fifo_generator_0/fifo_generator_0_clocks.xdc] for cell 'your_instance_name/U0'
+Finished Parsing XDC File [f:/FPGA/Design/FIFO_IP/FIFO_IP.srcs/sources_1/ip/fifo_generator_0/fifo_generator_0_clocks.xdc] for cell 'your_instance_name/U0'
+Sourcing Tcl File [E:/VIVADO2018/Install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'your_instance_name/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst'
+Finished Sourcing Tcl File [E:/VIVADO2018/Install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'your_instance_name/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst'
+Sourcing Tcl File [E:/VIVADO2018/Install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'your_instance_name/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst'
+Finished Sourcing Tcl File [E:/VIVADO2018/Install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'your_instance_name/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst'
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [E:/VIVADO2018/Install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/FIFO_IP_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/FIFO_IP_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Sourcing Tcl File [E:/VIVADO2018/Install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'your_instance_name/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.gic_rst.xpm_cdc_single_inst_rrst_wr'
+Finished Sourcing Tcl File [E:/VIVADO2018/Install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'your_instance_name/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.gic_rst.xpm_cdc_single_inst_rrst_wr'
+Sourcing Tcl File [E:/VIVADO2018/Install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'your_instance_name/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.gic_rst.xpm_cdc_single_inst_wrst_rd'
+Finished Sourcing Tcl File [E:/VIVADO2018/Install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'your_instance_name/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.gic_rst.xpm_cdc_single_inst_wrst_rd'
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [E:/VIVADO2018/Install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/FIFO_IP_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/FIFO_IP_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Sourcing Tcl File [E:/VIVADO2018/Install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_sync_rst.tcl] for cell 'your_instance_name/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.gic_rst.xpm_cdc_sync_rst_inst_wrst'
+Finished Sourcing Tcl File [E:/VIVADO2018/Install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_sync_rst.tcl] for cell 'your_instance_name/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.gic_rst.xpm_cdc_sync_rst_inst_wrst'
+Sourcing Tcl File [E:/VIVADO2018/Install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_sync_rst.tcl] for cell 'your_instance_name/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.xpm_cdc_sync_rst_inst_wrst'
+Finished Sourcing Tcl File [E:/VIVADO2018/Install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_sync_rst.tcl] for cell 'your_instance_name/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.xpm_cdc_sync_rst_inst_wrst'
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2425.305 ; gain = 0.000
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+refresh_design: Time (s): cpu = 00:00:10 ; elapsed = 00:00:09 . Memory (MB): peak = 2437.934 ; gain = 115.746
+update_compile_order -fileset sources_1
+refresh_design
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 2547.746 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'FIFO_IP' [F:/FPGA/Design/FIFO_IP/FIFO_IP.srcs/sources_1/new/FIFO_IP.v:1]
+INFO: [Synth 8-6157] synthesizing module 'FIFO_RD' [F:/FPGA/Design/FIFO_IP/FIFO_IP.srcs/sources_1/new/FIFO_RD.v:1]
+WARNING: [Synth 8-6014] Unused sequential element rd_data_reg was removed.  [F:/FPGA/Design/FIFO_IP/FIFO_IP.srcs/sources_1/new/FIFO_RD.v:56]
+INFO: [Synth 8-6155] done synthesizing module 'FIFO_RD' (1#1) [F:/FPGA/Design/FIFO_IP/FIFO_IP.srcs/sources_1/new/FIFO_RD.v:1]
+INFO: [Synth 8-6157] synthesizing module 'fifo_generator_0' [F:/FPGA/Design/FIFO_IP/.Xil/Vivado-11020-DESKTOP-CD1624M/realtime/fifo_generator_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'fifo_generator_0' (2#1) [F:/FPGA/Design/FIFO_IP/.Xil/Vivado-11020-DESKTOP-CD1624M/realtime/fifo_generator_0_stub.v:6]
+WARNING: [Synth 8-3848] Net fifo_wr_data in module/entity FIFO_IP does not have driver. [F:/FPGA/Design/FIFO_IP/FIFO_IP.srcs/sources_1/new/FIFO_IP.v:19]
+WARNING: [Synth 8-3848] Net fifo_wr_en in module/entity FIFO_IP does not have driver. [F:/FPGA/Design/FIFO_IP/FIFO_IP.srcs/sources_1/new/FIFO_IP.v:17]
+INFO: [Synth 8-6155] done synthesizing module 'FIFO_IP' (3#1) [F:/FPGA/Design/FIFO_IP/FIFO_IP.srcs/sources_1/new/FIFO_IP.v:1]
+WARNING: [Synth 8-3331] design FIFO_RD has unconnected port fifo_rd_data[7]
+WARNING: [Synth 8-3331] design FIFO_RD has unconnected port fifo_rd_data[6]
+WARNING: [Synth 8-3331] design FIFO_RD has unconnected port fifo_rd_data[5]
+WARNING: [Synth 8-3331] design FIFO_RD has unconnected port fifo_rd_data[4]
+WARNING: [Synth 8-3331] design FIFO_RD has unconnected port fifo_rd_data[3]
+WARNING: [Synth 8-3331] design FIFO_RD has unconnected port fifo_rd_data[2]
+WARNING: [Synth 8-3331] design FIFO_RD has unconnected port fifo_rd_data[1]
+WARNING: [Synth 8-3331] design FIFO_RD has unconnected port fifo_rd_data[0]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 2547.746 ; gain = 0.000
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 2547.746 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 2547.746 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Project 1-454] Reading design checkpoint 'f:/FPGA/Design/FIFO_IP/FIFO_IP.srcs/sources_1/ip/fifo_generator_0/fifo_generator_0.dcp' for cell 'your_instance_name'
+INFO: [Netlist 29-17] Analyzing 1 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2018.3
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-140] Inserted 2 IBUFs to IO ports without IO buffers.
+INFO: [Opt 31-141] Inserted 22 OBUFs to IO ports without IO buffers.
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [f:/FPGA/Design/FIFO_IP/FIFO_IP.srcs/sources_1/ip/fifo_generator_0/fifo_generator_0.xdc] for cell 'your_instance_name/U0'
+Finished Parsing XDC File [f:/FPGA/Design/FIFO_IP/FIFO_IP.srcs/sources_1/ip/fifo_generator_0/fifo_generator_0.xdc] for cell 'your_instance_name/U0'
+Parsing XDC File [f:/FPGA/Design/FIFO_IP/FIFO_IP.srcs/sources_1/ip/fifo_generator_0/fifo_generator_0_clocks.xdc] for cell 'your_instance_name/U0'
+Finished Parsing XDC File [f:/FPGA/Design/FIFO_IP/FIFO_IP.srcs/sources_1/ip/fifo_generator_0/fifo_generator_0_clocks.xdc] for cell 'your_instance_name/U0'
+Sourcing Tcl File [E:/VIVADO2018/Install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'your_instance_name/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst'
+Finished Sourcing Tcl File [E:/VIVADO2018/Install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'your_instance_name/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst'
+Sourcing Tcl File [E:/VIVADO2018/Install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'your_instance_name/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst'
+Finished Sourcing Tcl File [E:/VIVADO2018/Install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'your_instance_name/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst'
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [E:/VIVADO2018/Install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/FIFO_IP_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/FIFO_IP_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Sourcing Tcl File [E:/VIVADO2018/Install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'your_instance_name/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.gic_rst.xpm_cdc_single_inst_rrst_wr'
+Finished Sourcing Tcl File [E:/VIVADO2018/Install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'your_instance_name/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.gic_rst.xpm_cdc_single_inst_rrst_wr'
+Sourcing Tcl File [E:/VIVADO2018/Install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'your_instance_name/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.gic_rst.xpm_cdc_single_inst_wrst_rd'
+Finished Sourcing Tcl File [E:/VIVADO2018/Install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'your_instance_name/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.gic_rst.xpm_cdc_single_inst_wrst_rd'
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [E:/VIVADO2018/Install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/FIFO_IP_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/FIFO_IP_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Sourcing Tcl File [E:/VIVADO2018/Install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_sync_rst.tcl] for cell 'your_instance_name/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.gic_rst.xpm_cdc_sync_rst_inst_wrst'
+Finished Sourcing Tcl File [E:/VIVADO2018/Install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_sync_rst.tcl] for cell 'your_instance_name/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.gic_rst.xpm_cdc_sync_rst_inst_wrst'
+Sourcing Tcl File [E:/VIVADO2018/Install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_sync_rst.tcl] for cell 'your_instance_name/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.xpm_cdc_sync_rst_inst_wrst'
+Finished Sourcing Tcl File [E:/VIVADO2018/Install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_sync_rst.tcl] for cell 'your_instance_name/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.xpm_cdc_sync_rst_inst_wrst'
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2561.996 ; gain = 0.000
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+refresh_design: Time (s): cpu = 00:00:10 ; elapsed = 00:00:07 . Memory (MB): peak = 2726.562 ; gain = 180.117
+refresh_design
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 2729.367 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'FIFO_IP' [F:/FPGA/Design/FIFO_IP/FIFO_IP.srcs/sources_1/new/FIFO_IP.v:1]
+INFO: [Synth 8-6157] synthesizing module 'FIFO_RD' [F:/FPGA/Design/FIFO_IP/FIFO_IP.srcs/sources_1/new/FIFO_RD.v:1]
+WARNING: [Synth 8-6014] Unused sequential element rd_data_reg was removed.  [F:/FPGA/Design/FIFO_IP/FIFO_IP.srcs/sources_1/new/FIFO_RD.v:56]
+INFO: [Synth 8-6155] done synthesizing module 'FIFO_RD' (1#1) [F:/FPGA/Design/FIFO_IP/FIFO_IP.srcs/sources_1/new/FIFO_RD.v:1]
+INFO: [Synth 8-6157] synthesizing module 'fifo_generator_0' [F:/FPGA/Design/FIFO_IP/.Xil/Vivado-11020-DESKTOP-CD1624M/realtime/fifo_generator_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'fifo_generator_0' (2#1) [F:/FPGA/Design/FIFO_IP/.Xil/Vivado-11020-DESKTOP-CD1624M/realtime/fifo_generator_0_stub.v:6]
+WARNING: [Synth 8-3848] Net fifo_wr_data in module/entity FIFO_IP does not have driver. [F:/FPGA/Design/FIFO_IP/FIFO_IP.srcs/sources_1/new/FIFO_IP.v:19]
+WARNING: [Synth 8-3848] Net fifo_wr_en in module/entity FIFO_IP does not have driver. [F:/FPGA/Design/FIFO_IP/FIFO_IP.srcs/sources_1/new/FIFO_IP.v:17]
+INFO: [Synth 8-6155] done synthesizing module 'FIFO_IP' (3#1) [F:/FPGA/Design/FIFO_IP/FIFO_IP.srcs/sources_1/new/FIFO_IP.v:1]
+WARNING: [Synth 8-3331] design FIFO_RD has unconnected port fifo_rd_data[7]
+WARNING: [Synth 8-3331] design FIFO_RD has unconnected port fifo_rd_data[6]
+WARNING: [Synth 8-3331] design FIFO_RD has unconnected port fifo_rd_data[5]
+WARNING: [Synth 8-3331] design FIFO_RD has unconnected port fifo_rd_data[4]
+WARNING: [Synth 8-3331] design FIFO_RD has unconnected port fifo_rd_data[3]
+WARNING: [Synth 8-3331] design FIFO_RD has unconnected port fifo_rd_data[2]
+WARNING: [Synth 8-3331] design FIFO_RD has unconnected port fifo_rd_data[1]
+WARNING: [Synth 8-3331] design FIFO_RD has unconnected port fifo_rd_data[0]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 2729.367 ; gain = 0.000
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 2730.406 ; gain = 1.039
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 2730.406 ; gain = 1.039
+---------------------------------------------------------------------------------
+INFO: [Project 1-454] Reading design checkpoint 'f:/FPGA/Design/FIFO_IP/FIFO_IP.srcs/sources_1/ip/fifo_generator_0/fifo_generator_0.dcp' for cell 'your_instance_name'
+INFO: [Netlist 29-17] Analyzing 1 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2018.3
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-140] Inserted 2 IBUFs to IO ports without IO buffers.
+INFO: [Opt 31-141] Inserted 14 OBUFs to IO ports without IO buffers.
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [f:/FPGA/Design/FIFO_IP/FIFO_IP.srcs/sources_1/ip/fifo_generator_0/fifo_generator_0.xdc] for cell 'your_instance_name/U0'
+Finished Parsing XDC File [f:/FPGA/Design/FIFO_IP/FIFO_IP.srcs/sources_1/ip/fifo_generator_0/fifo_generator_0.xdc] for cell 'your_instance_name/U0'
+Parsing XDC File [f:/FPGA/Design/FIFO_IP/FIFO_IP.srcs/sources_1/ip/fifo_generator_0/fifo_generator_0_clocks.xdc] for cell 'your_instance_name/U0'
+Finished Parsing XDC File [f:/FPGA/Design/FIFO_IP/FIFO_IP.srcs/sources_1/ip/fifo_generator_0/fifo_generator_0_clocks.xdc] for cell 'your_instance_name/U0'
+Sourcing Tcl File [E:/VIVADO2018/Install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'your_instance_name/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst'
+Finished Sourcing Tcl File [E:/VIVADO2018/Install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'your_instance_name/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst'
+Sourcing Tcl File [E:/VIVADO2018/Install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'your_instance_name/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst'
+Finished Sourcing Tcl File [E:/VIVADO2018/Install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'your_instance_name/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst'
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [E:/VIVADO2018/Install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/FIFO_IP_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/FIFO_IP_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Sourcing Tcl File [E:/VIVADO2018/Install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'your_instance_name/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.gic_rst.xpm_cdc_single_inst_rrst_wr'
+Finished Sourcing Tcl File [E:/VIVADO2018/Install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'your_instance_name/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.gic_rst.xpm_cdc_single_inst_rrst_wr'
+Sourcing Tcl File [E:/VIVADO2018/Install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'your_instance_name/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.gic_rst.xpm_cdc_single_inst_wrst_rd'
+Finished Sourcing Tcl File [E:/VIVADO2018/Install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'your_instance_name/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.gic_rst.xpm_cdc_single_inst_wrst_rd'
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [E:/VIVADO2018/Install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/FIFO_IP_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/FIFO_IP_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Sourcing Tcl File [E:/VIVADO2018/Install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_sync_rst.tcl] for cell 'your_instance_name/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.gic_rst.xpm_cdc_sync_rst_inst_wrst'
+Finished Sourcing Tcl File [E:/VIVADO2018/Install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_sync_rst.tcl] for cell 'your_instance_name/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.gic_rst.xpm_cdc_sync_rst_inst_wrst'
+Sourcing Tcl File [E:/VIVADO2018/Install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_sync_rst.tcl] for cell 'your_instance_name/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.xpm_cdc_sync_rst_inst_wrst'
+Finished Sourcing Tcl File [E:/VIVADO2018/Install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_sync_rst.tcl] for cell 'your_instance_name/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.xpm_cdc_sync_rst_inst_wrst'
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 2746.512 ; gain = 0.000
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+refresh_design: Time (s): cpu = 00:00:10 ; elapsed = 00:00:08 . Memory (MB): peak = 2775.676 ; gain = 47.613
+reset_run synth_1
+launch_runs synth_1 -jobs 16
+[Mon Nov  2 18:43:19 2020] Launched synth_1...
+Run output will be captured here: F:/FPGA/Design/FIFO_IP/FIFO_IP.runs/synth_1/runme.log
+current_design synth_1
+set_property IOSTANDARD LVCMOS33 [get_ports [list {fifo_rd_data[7]} {fifo_rd_data[6]} {fifo_rd_data[5]} {fifo_rd_data[4]} {fifo_rd_data[3]} {fifo_rd_data[2]} {fifo_rd_data[1]} {fifo_rd_data[0]} empty]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list full]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list sys_clk]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list {rd_data_count[4]} {rd_data_count[3]} {rd_data_count[2]} {rd_data_count[1]} {rd_data_count[0]}]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list {wr_data_count[4]} {wr_data_count[3]} {wr_data_count[2]} {wr_data_count[1]} {wr_data_count[0]}]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list rd_rst_busy]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list sys_rst_n]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list wr_rst_busy]]
+file mkdir F:/FPGA/Design/FIFO_IP/FIFO_IP.srcs/constrs_1/new
+close [ open F:/FPGA/Design/FIFO_IP/FIFO_IP.srcs/constrs_1/new/FIFO_IP.xdc w ]
+add_files -fileset constrs_1 F:/FPGA/Design/FIFO_IP/FIFO_IP.srcs/constrs_1/new/FIFO_IP.xdc
+set_property target_constrs_file F:/FPGA/Design/FIFO_IP/FIFO_IP.srcs/constrs_1/new/FIFO_IP.xdc [current_fileset -constrset]
+save_constraints -force
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2781.715 ; gain = 0.000
+synth_design -rtl -name rtl_2
+Command: synth_design -rtl -name rtl_2
+Starting synth_design
+Using part: xc7z010clg400-1
+Top: FIFO_IP
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 2787.082 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'FIFO_IP' [F:/FPGA/Design/FIFO_IP/FIFO_IP.srcs/sources_1/new/FIFO_IP.v:1]
+ERROR: [Synth 8-439] module 'FIFO_WR' not found [F:/FPGA/Design/FIFO_IP/FIFO_IP.srcs/sources_1/new/FIFO_IP.v:22]
+ERROR: [Synth 8-6156] failed synthesizing module 'FIFO_IP' [F:/FPGA/Design/FIFO_IP/FIFO_IP.srcs/sources_1/new/FIFO_IP.v:1]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 2788.988 ; gain = 1.906
+---------------------------------------------------------------------------------
+RTL Elaboration failed
+1 Infos, 0 Warnings, 0 Critical Warnings and 3 Errors encountered.
+synth_design failed
+ERROR: [Vivado_Tcl 4-5] Elaboration failed - please see the console for details
+update_compile_order -fileset sources_1
+synth_design -rtl -name rtl_2
+Command: synth_design -rtl -name rtl_2
+Starting synth_design
+Using part: xc7z010clg400-1
+Top: FIFO_IP
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 2800.027 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'FIFO_IP' [F:/FPGA/Design/FIFO_IP/FIFO_IP.srcs/sources_1/new/FIFO_IP.v:1]
+INFO: [Synth 8-6157] synthesizing module 'FIFO_WR' [F:/FPGA/Design/FIFO_IP/FIFO_IP.srcs/sources_1/new/FIFO_WR.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'FIFO_WR' (1#1) [F:/FPGA/Design/FIFO_IP/FIFO_IP.srcs/sources_1/new/FIFO_WR.v:1]
+INFO: [Synth 8-6157] synthesizing module 'FIFO_RD' [F:/FPGA/Design/FIFO_IP/FIFO_IP.srcs/sources_1/new/FIFO_RD.v:1]
+WARNING: [Synth 8-6014] Unused sequential element rd_data_reg was removed.  [F:/FPGA/Design/FIFO_IP/FIFO_IP.srcs/sources_1/new/FIFO_RD.v:56]
+INFO: [Synth 8-6155] done synthesizing module 'FIFO_RD' (2#1) [F:/FPGA/Design/FIFO_IP/FIFO_IP.srcs/sources_1/new/FIFO_RD.v:1]
+INFO: [Synth 8-6157] synthesizing module 'fifo_generator_0' [F:/FPGA/Design/FIFO_IP/.Xil/Vivado-11020-DESKTOP-CD1624M/realtime/fifo_generator_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'fifo_generator_0' (3#1) [F:/FPGA/Design/FIFO_IP/.Xil/Vivado-11020-DESKTOP-CD1624M/realtime/fifo_generator_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'FIFO_IP' (4#1) [F:/FPGA/Design/FIFO_IP/FIFO_IP.srcs/sources_1/new/FIFO_IP.v:1]
+WARNING: [Synth 8-3331] design FIFO_RD has unconnected port fifo_rd_data[7]
+WARNING: [Synth 8-3331] design FIFO_RD has unconnected port fifo_rd_data[6]
+WARNING: [Synth 8-3331] design FIFO_RD has unconnected port fifo_rd_data[5]
+WARNING: [Synth 8-3331] design FIFO_RD has unconnected port fifo_rd_data[4]
+WARNING: [Synth 8-3331] design FIFO_RD has unconnected port fifo_rd_data[3]
+WARNING: [Synth 8-3331] design FIFO_RD has unconnected port fifo_rd_data[2]
+WARNING: [Synth 8-3331] design FIFO_RD has unconnected port fifo_rd_data[1]
+WARNING: [Synth 8-3331] design FIFO_RD has unconnected port fifo_rd_data[0]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 2800.027 ; gain = 0.000
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 2800.027 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 2800.027 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Project 1-454] Reading design checkpoint 'f:/FPGA/Design/FIFO_IP/FIFO_IP.srcs/sources_1/ip/fifo_generator_0/fifo_generator_0.dcp' for cell 'your_instance_name'
+INFO: [Netlist 29-17] Analyzing 1 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2018.3
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-140] Inserted 2 IBUFs to IO ports without IO buffers.
+INFO: [Opt 31-141] Inserted 14 OBUFs to IO ports without IO buffers.
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [f:/FPGA/Design/FIFO_IP/FIFO_IP.srcs/sources_1/ip/fifo_generator_0/fifo_generator_0.xdc] for cell 'your_instance_name/U0'
+Finished Parsing XDC File [f:/FPGA/Design/FIFO_IP/FIFO_IP.srcs/sources_1/ip/fifo_generator_0/fifo_generator_0.xdc] for cell 'your_instance_name/U0'
+Parsing XDC File [F:/FPGA/Design/FIFO_IP/FIFO_IP.srcs/constrs_1/new/FIFO_IP.xdc]
+WARNING: [Vivado 12-584] No ports matched 'fifo_rd_data[7]'. [F:/FPGA/Design/FIFO_IP/FIFO_IP.srcs/constrs_1/new/FIFO_IP.xdc:1]
+WARNING: [Vivado 12-584] No ports matched 'fifo_rd_data[6]'. [F:/FPGA/Design/FIFO_IP/FIFO_IP.srcs/constrs_1/new/FIFO_IP.xdc:2]
+WARNING: [Vivado 12-584] No ports matched 'fifo_rd_data[5]'. [F:/FPGA/Design/FIFO_IP/FIFO_IP.srcs/constrs_1/new/FIFO_IP.xdc:3]
+WARNING: [Vivado 12-584] No ports matched 'fifo_rd_data[4]'. [F:/FPGA/Design/FIFO_IP/FIFO_IP.srcs/constrs_1/new/FIFO_IP.xdc:4]
+WARNING: [Vivado 12-584] No ports matched 'fifo_rd_data[3]'. [F:/FPGA/Design/FIFO_IP/FIFO_IP.srcs/constrs_1/new/FIFO_IP.xdc:5]
+WARNING: [Vivado 12-584] No ports matched 'fifo_rd_data[2]'. [F:/FPGA/Design/FIFO_IP/FIFO_IP.srcs/constrs_1/new/FIFO_IP.xdc:6]
+WARNING: [Vivado 12-584] No ports matched 'fifo_rd_data[1]'. [F:/FPGA/Design/FIFO_IP/FIFO_IP.srcs/constrs_1/new/FIFO_IP.xdc:7]
+WARNING: [Vivado 12-584] No ports matched 'fifo_rd_data[0]'. [F:/FPGA/Design/FIFO_IP/FIFO_IP.srcs/constrs_1/new/FIFO_IP.xdc:8]
+Finished Parsing XDC File [F:/FPGA/Design/FIFO_IP/FIFO_IP.srcs/constrs_1/new/FIFO_IP.xdc]
+WARNING: [Project 1-498] One or more constraints failed evaluation while reading constraint file [F:/FPGA/Design/FIFO_IP/FIFO_IP.srcs/constrs_1/new/FIFO_IP.xdc] and the design contains unresolved black boxes. These constraints will be read post-synthesis (as long as their source constraint file is marked as used_in_implementation) and should be applied correctly then. You should review the constraints listed in the file [.Xil/FIFO_IP_propImpl.xdc] and check the run log file to verify that these constraints were correctly applied.
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2918.086 ; gain = 0.000
+Parsing XDC File [f:/FPGA/Design/FIFO_IP/FIFO_IP.srcs/sources_1/ip/fifo_generator_0/fifo_generator_0_clocks.xdc] for cell 'your_instance_name/U0'
+Finished Parsing XDC File [f:/FPGA/Design/FIFO_IP/FIFO_IP.srcs/sources_1/ip/fifo_generator_0/fifo_generator_0_clocks.xdc] for cell 'your_instance_name/U0'
+Sourcing Tcl File [E:/VIVADO2018/Install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'your_instance_name/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst'
+Finished Sourcing Tcl File [E:/VIVADO2018/Install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'your_instance_name/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst'
+Sourcing Tcl File [E:/VIVADO2018/Install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'your_instance_name/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst'
+Finished Sourcing Tcl File [E:/VIVADO2018/Install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'your_instance_name/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst'
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [E:/VIVADO2018/Install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/FIFO_IP_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/FIFO_IP_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Sourcing Tcl File [E:/VIVADO2018/Install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'your_instance_name/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.gic_rst.xpm_cdc_single_inst_rrst_wr'
+Finished Sourcing Tcl File [E:/VIVADO2018/Install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'your_instance_name/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.gic_rst.xpm_cdc_single_inst_rrst_wr'
+Sourcing Tcl File [E:/VIVADO2018/Install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'your_instance_name/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.gic_rst.xpm_cdc_single_inst_wrst_rd'
+Finished Sourcing Tcl File [E:/VIVADO2018/Install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'your_instance_name/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.gic_rst.xpm_cdc_single_inst_wrst_rd'
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [E:/VIVADO2018/Install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/FIFO_IP_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/FIFO_IP_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Sourcing Tcl File [E:/VIVADO2018/Install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_sync_rst.tcl] for cell 'your_instance_name/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.gic_rst.xpm_cdc_sync_rst_inst_wrst'
+Finished Sourcing Tcl File [E:/VIVADO2018/Install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_sync_rst.tcl] for cell 'your_instance_name/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.gic_rst.xpm_cdc_sync_rst_inst_wrst'
+Sourcing Tcl File [E:/VIVADO2018/Install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_sync_rst.tcl] for cell 'your_instance_name/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.xpm_cdc_sync_rst_inst_wrst'
+Finished Sourcing Tcl File [E:/VIVADO2018/Install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_sync_rst.tcl] for cell 'your_instance_name/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.xpm_cdc_sync_rst_inst_wrst'
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 2918.086 ; gain = 0.000
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2918.086 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+RTL Elaboration Complete:  : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 2918.086 ; gain = 118.059
+19 Infos, 18 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+close_design
+close_design
+refresh_design
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 2918.086 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'FIFO_IP' [F:/FPGA/Design/FIFO_IP/FIFO_IP.srcs/sources_1/new/FIFO_IP.v:1]
+INFO: [Synth 8-6157] synthesizing module 'FIFO_WR' [F:/FPGA/Design/FIFO_IP/FIFO_IP.srcs/sources_1/new/FIFO_WR.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'FIFO_WR' (1#1) [F:/FPGA/Design/FIFO_IP/FIFO_IP.srcs/sources_1/new/FIFO_WR.v:1]
+INFO: [Synth 8-6157] synthesizing module 'FIFO_RD' [F:/FPGA/Design/FIFO_IP/FIFO_IP.srcs/sources_1/new/FIFO_RD.v:1]
+WARNING: [Synth 8-6014] Unused sequential element rd_data_reg was removed.  [F:/FPGA/Design/FIFO_IP/FIFO_IP.srcs/sources_1/new/FIFO_RD.v:56]
+INFO: [Synth 8-6155] done synthesizing module 'FIFO_RD' (2#1) [F:/FPGA/Design/FIFO_IP/FIFO_IP.srcs/sources_1/new/FIFO_RD.v:1]
+INFO: [Synth 8-6157] synthesizing module 'fifo_generator_0' [F:/FPGA/Design/FIFO_IP/.Xil/Vivado-11020-DESKTOP-CD1624M/realtime/fifo_generator_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'fifo_generator_0' (3#1) [F:/FPGA/Design/FIFO_IP/.Xil/Vivado-11020-DESKTOP-CD1624M/realtime/fifo_generator_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'FIFO_IP' (4#1) [F:/FPGA/Design/FIFO_IP/FIFO_IP.srcs/sources_1/new/FIFO_IP.v:1]
+WARNING: [Synth 8-3331] design FIFO_RD has unconnected port fifo_rd_data[7]
+WARNING: [Synth 8-3331] design FIFO_RD has unconnected port fifo_rd_data[6]
+WARNING: [Synth 8-3331] design FIFO_RD has unconnected port fifo_rd_data[5]
+WARNING: [Synth 8-3331] design FIFO_RD has unconnected port fifo_rd_data[4]
+WARNING: [Synth 8-3331] design FIFO_RD has unconnected port fifo_rd_data[3]
+WARNING: [Synth 8-3331] design FIFO_RD has unconnected port fifo_rd_data[2]
+WARNING: [Synth 8-3331] design FIFO_RD has unconnected port fifo_rd_data[1]
+WARNING: [Synth 8-3331] design FIFO_RD has unconnected port fifo_rd_data[0]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 2918.086 ; gain = 0.000
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 2918.086 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 2918.086 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Project 1-454] Reading design checkpoint 'f:/FPGA/Design/FIFO_IP/FIFO_IP.srcs/sources_1/ip/fifo_generator_0/fifo_generator_0.dcp' for cell 'your_instance_name'
+INFO: [Netlist 29-17] Analyzing 1 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2018.3
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-140] Inserted 2 IBUFs to IO ports without IO buffers.
+INFO: [Opt 31-141] Inserted 14 OBUFs to IO ports without IO buffers.
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [f:/FPGA/Design/FIFO_IP/FIFO_IP.srcs/sources_1/ip/fifo_generator_0/fifo_generator_0.xdc] for cell 'your_instance_name/U0'
+Finished Parsing XDC File [f:/FPGA/Design/FIFO_IP/FIFO_IP.srcs/sources_1/ip/fifo_generator_0/fifo_generator_0.xdc] for cell 'your_instance_name/U0'
+Parsing XDC File [F:/FPGA/Design/FIFO_IP/FIFO_IP.srcs/constrs_1/new/FIFO_IP.xdc]
+WARNING: [Vivado 12-584] No ports matched 'fifo_rd_data[7]'. [F:/FPGA/Design/FIFO_IP/FIFO_IP.srcs/constrs_1/new/FIFO_IP.xdc:1]
+WARNING: [Vivado 12-584] No ports matched 'fifo_rd_data[6]'. [F:/FPGA/Design/FIFO_IP/FIFO_IP.srcs/constrs_1/new/FIFO_IP.xdc:2]
+WARNING: [Vivado 12-584] No ports matched 'fifo_rd_data[5]'. [F:/FPGA/Design/FIFO_IP/FIFO_IP.srcs/constrs_1/new/FIFO_IP.xdc:3]
+WARNING: [Vivado 12-584] No ports matched 'fifo_rd_data[4]'. [F:/FPGA/Design/FIFO_IP/FIFO_IP.srcs/constrs_1/new/FIFO_IP.xdc:4]
+WARNING: [Vivado 12-584] No ports matched 'fifo_rd_data[3]'. [F:/FPGA/Design/FIFO_IP/FIFO_IP.srcs/constrs_1/new/FIFO_IP.xdc:5]
+WARNING: [Vivado 12-584] No ports matched 'fifo_rd_data[2]'. [F:/FPGA/Design/FIFO_IP/FIFO_IP.srcs/constrs_1/new/FIFO_IP.xdc:6]
+WARNING: [Vivado 12-584] No ports matched 'fifo_rd_data[1]'. [F:/FPGA/Design/FIFO_IP/FIFO_IP.srcs/constrs_1/new/FIFO_IP.xdc:7]
+WARNING: [Vivado 12-584] No ports matched 'fifo_rd_data[0]'. [F:/FPGA/Design/FIFO_IP/FIFO_IP.srcs/constrs_1/new/FIFO_IP.xdc:8]
+Finished Parsing XDC File [F:/FPGA/Design/FIFO_IP/FIFO_IP.srcs/constrs_1/new/FIFO_IP.xdc]
+WARNING: [Project 1-498] One or more constraints failed evaluation while reading constraint file [F:/FPGA/Design/FIFO_IP/FIFO_IP.srcs/constrs_1/new/FIFO_IP.xdc] and the design contains unresolved black boxes. These constraints will be read post-synthesis (as long as their source constraint file is marked as used_in_implementation) and should be applied correctly then. You should review the constraints listed in the file [.Xil/FIFO_IP_propImpl.xdc] and check the run log file to verify that these constraints were correctly applied.
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2918.086 ; gain = 0.000
+Parsing XDC File [f:/FPGA/Design/FIFO_IP/FIFO_IP.srcs/sources_1/ip/fifo_generator_0/fifo_generator_0_clocks.xdc] for cell 'your_instance_name/U0'
+Finished Parsing XDC File [f:/FPGA/Design/FIFO_IP/FIFO_IP.srcs/sources_1/ip/fifo_generator_0/fifo_generator_0_clocks.xdc] for cell 'your_instance_name/U0'
+Sourcing Tcl File [E:/VIVADO2018/Install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'your_instance_name/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst'
+Finished Sourcing Tcl File [E:/VIVADO2018/Install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'your_instance_name/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst'
+Sourcing Tcl File [E:/VIVADO2018/Install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'your_instance_name/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst'
+Finished Sourcing Tcl File [E:/VIVADO2018/Install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'your_instance_name/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst'
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [E:/VIVADO2018/Install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/FIFO_IP_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/FIFO_IP_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Sourcing Tcl File [E:/VIVADO2018/Install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'your_instance_name/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.gic_rst.xpm_cdc_single_inst_rrst_wr'
+Finished Sourcing Tcl File [E:/VIVADO2018/Install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'your_instance_name/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.gic_rst.xpm_cdc_single_inst_rrst_wr'
+Sourcing Tcl File [E:/VIVADO2018/Install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'your_instance_name/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.gic_rst.xpm_cdc_single_inst_wrst_rd'
+Finished Sourcing Tcl File [E:/VIVADO2018/Install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'your_instance_name/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.gic_rst.xpm_cdc_single_inst_wrst_rd'
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [E:/VIVADO2018/Install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/FIFO_IP_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/FIFO_IP_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Sourcing Tcl File [E:/VIVADO2018/Install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_sync_rst.tcl] for cell 'your_instance_name/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.gic_rst.xpm_cdc_sync_rst_inst_wrst'
+Finished Sourcing Tcl File [E:/VIVADO2018/Install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_sync_rst.tcl] for cell 'your_instance_name/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.gic_rst.xpm_cdc_sync_rst_inst_wrst'
+Sourcing Tcl File [E:/VIVADO2018/Install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_sync_rst.tcl] for cell 'your_instance_name/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.xpm_cdc_sync_rst_inst_wrst'
+Finished Sourcing Tcl File [E:/VIVADO2018/Install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_sync_rst.tcl] for cell 'your_instance_name/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.xpm_cdc_sync_rst_inst_wrst'
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2918.086 ; gain = 0.000
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+refresh_design: Time (s): cpu = 00:00:08 ; elapsed = 00:00:06 . Memory (MB): peak = 2918.086 ; gain = 0.000
+reset_run synth_1
+launch_runs synth_1 -jobs 16
+[Mon Nov  2 18:47:54 2020] Launched synth_1...
+Run output will be captured here: F:/FPGA/Design/FIFO_IP/FIFO_IP.runs/synth_1/runme.log
+open_run synth_1 -name synth_1
+Design is defaulting to impl run constrset: constrs_1
+Design is defaulting to synth run part: xc7z010clg400-1
+INFO: [Project 1-454] Reading design checkpoint 'f:/FPGA/Design/FIFO_IP/FIFO_IP.srcs/sources_1/ip/fifo_generator_0/fifo_generator_0.dcp' for cell 'your_instance_name'
+INFO: [Netlist 29-17] Analyzing 1 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2018.3
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [f:/FPGA/Design/FIFO_IP/FIFO_IP.srcs/sources_1/ip/fifo_generator_0/fifo_generator_0.xdc] for cell 'your_instance_name/U0'
+Finished Parsing XDC File [f:/FPGA/Design/FIFO_IP/FIFO_IP.srcs/sources_1/ip/fifo_generator_0/fifo_generator_0.xdc] for cell 'your_instance_name/U0'
+Parsing XDC File [F:/FPGA/Design/FIFO_IP/FIFO_IP.srcs/constrs_1/new/FIFO_IP.xdc]
+WARNING: [Vivado 12-584] No ports matched 'fifo_rd_data[7]'. [F:/FPGA/Design/FIFO_IP/FIFO_IP.srcs/constrs_1/new/FIFO_IP.xdc:1]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/FPGA/Design/FIFO_IP/FIFO_IP.srcs/constrs_1/new/FIFO_IP.xdc:1]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'fifo_rd_data[6]'. [F:/FPGA/Design/FIFO_IP/FIFO_IP.srcs/constrs_1/new/FIFO_IP.xdc:2]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/FPGA/Design/FIFO_IP/FIFO_IP.srcs/constrs_1/new/FIFO_IP.xdc:2]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'fifo_rd_data[5]'. [F:/FPGA/Design/FIFO_IP/FIFO_IP.srcs/constrs_1/new/FIFO_IP.xdc:3]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/FPGA/Design/FIFO_IP/FIFO_IP.srcs/constrs_1/new/FIFO_IP.xdc:3]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'fifo_rd_data[4]'. [F:/FPGA/Design/FIFO_IP/FIFO_IP.srcs/constrs_1/new/FIFO_IP.xdc:4]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/FPGA/Design/FIFO_IP/FIFO_IP.srcs/constrs_1/new/FIFO_IP.xdc:4]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'fifo_rd_data[3]'. [F:/FPGA/Design/FIFO_IP/FIFO_IP.srcs/constrs_1/new/FIFO_IP.xdc:5]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/FPGA/Design/FIFO_IP/FIFO_IP.srcs/constrs_1/new/FIFO_IP.xdc:5]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'fifo_rd_data[2]'. [F:/FPGA/Design/FIFO_IP/FIFO_IP.srcs/constrs_1/new/FIFO_IP.xdc:6]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/FPGA/Design/FIFO_IP/FIFO_IP.srcs/constrs_1/new/FIFO_IP.xdc:6]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'fifo_rd_data[1]'. [F:/FPGA/Design/FIFO_IP/FIFO_IP.srcs/constrs_1/new/FIFO_IP.xdc:7]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/FPGA/Design/FIFO_IP/FIFO_IP.srcs/constrs_1/new/FIFO_IP.xdc:7]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'fifo_rd_data[0]'. [F:/FPGA/Design/FIFO_IP/FIFO_IP.srcs/constrs_1/new/FIFO_IP.xdc:8]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/FPGA/Design/FIFO_IP/FIFO_IP.srcs/constrs_1/new/FIFO_IP.xdc:8]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+Finished Parsing XDC File [F:/FPGA/Design/FIFO_IP/FIFO_IP.srcs/constrs_1/new/FIFO_IP.xdc]
+Parsing XDC File [f:/FPGA/Design/FIFO_IP/FIFO_IP.srcs/sources_1/ip/fifo_generator_0/fifo_generator_0_clocks.xdc] for cell 'your_instance_name/U0'
+Finished Parsing XDC File [f:/FPGA/Design/FIFO_IP/FIFO_IP.srcs/sources_1/ip/fifo_generator_0/fifo_generator_0_clocks.xdc] for cell 'your_instance_name/U0'
+Sourcing Tcl File [E:/VIVADO2018/Install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'your_instance_name/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst'
+Finished Sourcing Tcl File [E:/VIVADO2018/Install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'your_instance_name/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst'
+Sourcing Tcl File [E:/VIVADO2018/Install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'your_instance_name/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst'
+Finished Sourcing Tcl File [E:/VIVADO2018/Install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'your_instance_name/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst'
+Sourcing Tcl File [E:/VIVADO2018/Install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'your_instance_name/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.gic_rst.xpm_cdc_single_inst_rrst_wr'
+Finished Sourcing Tcl File [E:/VIVADO2018/Install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'your_instance_name/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.gic_rst.xpm_cdc_single_inst_rrst_wr'
+Sourcing Tcl File [E:/VIVADO2018/Install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'your_instance_name/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.gic_rst.xpm_cdc_single_inst_wrst_rd'
+Finished Sourcing Tcl File [E:/VIVADO2018/Install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'your_instance_name/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.gic_rst.xpm_cdc_single_inst_wrst_rd'
+Sourcing Tcl File [E:/VIVADO2018/Install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_sync_rst.tcl] for cell 'your_instance_name/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.gic_rst.xpm_cdc_sync_rst_inst_wrst'
+Finished Sourcing Tcl File [E:/VIVADO2018/Install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_sync_rst.tcl] for cell 'your_instance_name/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.gic_rst.xpm_cdc_sync_rst_inst_wrst'
+Sourcing Tcl File [E:/VIVADO2018/Install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_sync_rst.tcl] for cell 'your_instance_name/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.xpm_cdc_sync_rst_inst_wrst'
+Finished Sourcing Tcl File [E:/VIVADO2018/Install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_sync_rst.tcl] for cell 'your_instance_name/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.xpm_cdc_sync_rst_inst_wrst'
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2918.086 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+reset_run synth_1
+launch_runs synth_1 -jobs 16
+[Mon Nov  2 19:18:59 2020] Launched synth_1...
+Run output will be captured here: F:/FPGA/Design/FIFO_IP/FIFO_IP.runs/synth_1/runme.log
+close_design
+refresh_design
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 2918.086 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'FIFO_IP' [F:/FPGA/Design/FIFO_IP/FIFO_IP.srcs/sources_1/new/FIFO_IP.v:1]
+INFO: [Synth 8-6157] synthesizing module 'FIFO_WR' [F:/FPGA/Design/FIFO_IP/FIFO_IP.srcs/sources_1/new/FIFO_WR.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'FIFO_WR' (1#1) [F:/FPGA/Design/FIFO_IP/FIFO_IP.srcs/sources_1/new/FIFO_WR.v:1]
+INFO: [Synth 8-6157] synthesizing module 'FIFO_RD' [F:/FPGA/Design/FIFO_IP/FIFO_IP.srcs/sources_1/new/FIFO_RD.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'FIFO_RD' (2#1) [F:/FPGA/Design/FIFO_IP/FIFO_IP.srcs/sources_1/new/FIFO_RD.v:1]
+INFO: [Synth 8-6157] synthesizing module 'fifo_generator_0' [F:/FPGA/Design/FIFO_IP/.Xil/Vivado-11020-DESKTOP-CD1624M/realtime/fifo_generator_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'fifo_generator_0' (3#1) [F:/FPGA/Design/FIFO_IP/.Xil/Vivado-11020-DESKTOP-CD1624M/realtime/fifo_generator_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'FIFO_IP' (4#1) [F:/FPGA/Design/FIFO_IP/FIFO_IP.srcs/sources_1/new/FIFO_IP.v:1]
+WARNING: [Synth 8-3331] design FIFO_RD has unconnected port fifo_rd_data[7]
+WARNING: [Synth 8-3331] design FIFO_RD has unconnected port fifo_rd_data[6]
+WARNING: [Synth 8-3331] design FIFO_RD has unconnected port fifo_rd_data[5]
+WARNING: [Synth 8-3331] design FIFO_RD has unconnected port fifo_rd_data[4]
+WARNING: [Synth 8-3331] design FIFO_RD has unconnected port fifo_rd_data[3]
+WARNING: [Synth 8-3331] design FIFO_RD has unconnected port fifo_rd_data[2]
+WARNING: [Synth 8-3331] design FIFO_RD has unconnected port fifo_rd_data[1]
+WARNING: [Synth 8-3331] design FIFO_RD has unconnected port fifo_rd_data[0]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 2918.086 ; gain = 0.000
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 2918.086 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 2918.086 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Project 1-454] Reading design checkpoint 'f:/FPGA/Design/FIFO_IP/FIFO_IP.srcs/sources_1/ip/fifo_generator_0/fifo_generator_0.dcp' for cell 'your_instance_name'
+INFO: [Netlist 29-17] Analyzing 1 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2018.3
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-140] Inserted 2 IBUFs to IO ports without IO buffers.
+INFO: [Opt 31-141] Inserted 14 OBUFs to IO ports without IO buffers.
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [f:/FPGA/Design/FIFO_IP/FIFO_IP.srcs/sources_1/ip/fifo_generator_0/fifo_generator_0.xdc] for cell 'your_instance_name/U0'
+Finished Parsing XDC File [f:/FPGA/Design/FIFO_IP/FIFO_IP.srcs/sources_1/ip/fifo_generator_0/fifo_generator_0.xdc] for cell 'your_instance_name/U0'
+Parsing XDC File [F:/FPGA/Design/FIFO_IP/FIFO_IP.srcs/constrs_1/new/FIFO_IP.xdc]
+WARNING: [Vivado 12-584] No ports matched 'fifo_rd_data[7]'. [F:/FPGA/Design/FIFO_IP/FIFO_IP.srcs/constrs_1/new/FIFO_IP.xdc:1]
+WARNING: [Vivado 12-584] No ports matched 'fifo_rd_data[6]'. [F:/FPGA/Design/FIFO_IP/FIFO_IP.srcs/constrs_1/new/FIFO_IP.xdc:2]
+WARNING: [Vivado 12-584] No ports matched 'fifo_rd_data[5]'. [F:/FPGA/Design/FIFO_IP/FIFO_IP.srcs/constrs_1/new/FIFO_IP.xdc:3]
+WARNING: [Vivado 12-584] No ports matched 'fifo_rd_data[4]'. [F:/FPGA/Design/FIFO_IP/FIFO_IP.srcs/constrs_1/new/FIFO_IP.xdc:4]
+WARNING: [Vivado 12-584] No ports matched 'fifo_rd_data[3]'. [F:/FPGA/Design/FIFO_IP/FIFO_IP.srcs/constrs_1/new/FIFO_IP.xdc:5]
+WARNING: [Vivado 12-584] No ports matched 'fifo_rd_data[2]'. [F:/FPGA/Design/FIFO_IP/FIFO_IP.srcs/constrs_1/new/FIFO_IP.xdc:6]
+WARNING: [Vivado 12-584] No ports matched 'fifo_rd_data[1]'. [F:/FPGA/Design/FIFO_IP/FIFO_IP.srcs/constrs_1/new/FIFO_IP.xdc:7]
+WARNING: [Vivado 12-584] No ports matched 'fifo_rd_data[0]'. [F:/FPGA/Design/FIFO_IP/FIFO_IP.srcs/constrs_1/new/FIFO_IP.xdc:8]
+Finished Parsing XDC File [F:/FPGA/Design/FIFO_IP/FIFO_IP.srcs/constrs_1/new/FIFO_IP.xdc]
+WARNING: [Project 1-498] One or more constraints failed evaluation while reading constraint file [F:/FPGA/Design/FIFO_IP/FIFO_IP.srcs/constrs_1/new/FIFO_IP.xdc] and the design contains unresolved black boxes. These constraints will be read post-synthesis (as long as their source constraint file is marked as used_in_implementation) and should be applied correctly then. You should review the constraints listed in the file [.Xil/FIFO_IP_propImpl.xdc] and check the run log file to verify that these constraints were correctly applied.
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 2918.086 ; gain = 0.000
+Parsing XDC File [f:/FPGA/Design/FIFO_IP/FIFO_IP.srcs/sources_1/ip/fifo_generator_0/fifo_generator_0_clocks.xdc] for cell 'your_instance_name/U0'
+Finished Parsing XDC File [f:/FPGA/Design/FIFO_IP/FIFO_IP.srcs/sources_1/ip/fifo_generator_0/fifo_generator_0_clocks.xdc] for cell 'your_instance_name/U0'
+Sourcing Tcl File [E:/VIVADO2018/Install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'your_instance_name/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst'
+Finished Sourcing Tcl File [E:/VIVADO2018/Install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'your_instance_name/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst'
+Sourcing Tcl File [E:/VIVADO2018/Install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'your_instance_name/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst'
+Finished Sourcing Tcl File [E:/VIVADO2018/Install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'your_instance_name/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst'
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [E:/VIVADO2018/Install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/FIFO_IP_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/FIFO_IP_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Sourcing Tcl File [E:/VIVADO2018/Install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'your_instance_name/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.gic_rst.xpm_cdc_single_inst_rrst_wr'
+Finished Sourcing Tcl File [E:/VIVADO2018/Install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'your_instance_name/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.gic_rst.xpm_cdc_single_inst_rrst_wr'
+Sourcing Tcl File [E:/VIVADO2018/Install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'your_instance_name/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.gic_rst.xpm_cdc_single_inst_wrst_rd'
+Finished Sourcing Tcl File [E:/VIVADO2018/Install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'your_instance_name/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.gic_rst.xpm_cdc_single_inst_wrst_rd'
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [E:/VIVADO2018/Install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/FIFO_IP_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/FIFO_IP_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Sourcing Tcl File [E:/VIVADO2018/Install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_sync_rst.tcl] for cell 'your_instance_name/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.gic_rst.xpm_cdc_sync_rst_inst_wrst'
+Finished Sourcing Tcl File [E:/VIVADO2018/Install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_sync_rst.tcl] for cell 'your_instance_name/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.gic_rst.xpm_cdc_sync_rst_inst_wrst'
+Sourcing Tcl File [E:/VIVADO2018/Install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_sync_rst.tcl] for cell 'your_instance_name/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.xpm_cdc_sync_rst_inst_wrst'
+Finished Sourcing Tcl File [E:/VIVADO2018/Install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_sync_rst.tcl] for cell 'your_instance_name/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.xpm_cdc_sync_rst_inst_wrst'
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2918.086 ; gain = 0.000
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+refresh_design: Time (s): cpu = 00:00:08 ; elapsed = 00:00:07 . Memory (MB): peak = 2918.086 ; gain = 0.000
+open_run synth_1 -name synth_1
+Design is defaulting to impl run constrset: constrs_1
+Design is defaulting to synth run part: xc7z010clg400-1
+INFO: [Project 1-454] Reading design checkpoint 'f:/FPGA/Design/FIFO_IP/FIFO_IP.srcs/sources_1/ip/fifo_generator_0/fifo_generator_0.dcp' for cell 'your_instance_name'
+INFO: [Netlist 29-17] Analyzing 1 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2018.3
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [f:/FPGA/Design/FIFO_IP/FIFO_IP.srcs/sources_1/ip/fifo_generator_0/fifo_generator_0.xdc] for cell 'your_instance_name/U0'
+Finished Parsing XDC File [f:/FPGA/Design/FIFO_IP/FIFO_IP.srcs/sources_1/ip/fifo_generator_0/fifo_generator_0.xdc] for cell 'your_instance_name/U0'
+Parsing XDC File [F:/FPGA/Design/FIFO_IP/FIFO_IP.srcs/constrs_1/new/FIFO_IP.xdc]
+WARNING: [Vivado 12-584] No ports matched 'fifo_rd_data[7]'. [F:/FPGA/Design/FIFO_IP/FIFO_IP.srcs/constrs_1/new/FIFO_IP.xdc:1]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/FPGA/Design/FIFO_IP/FIFO_IP.srcs/constrs_1/new/FIFO_IP.xdc:1]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'fifo_rd_data[6]'. [F:/FPGA/Design/FIFO_IP/FIFO_IP.srcs/constrs_1/new/FIFO_IP.xdc:2]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/FPGA/Design/FIFO_IP/FIFO_IP.srcs/constrs_1/new/FIFO_IP.xdc:2]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'fifo_rd_data[5]'. [F:/FPGA/Design/FIFO_IP/FIFO_IP.srcs/constrs_1/new/FIFO_IP.xdc:3]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/FPGA/Design/FIFO_IP/FIFO_IP.srcs/constrs_1/new/FIFO_IP.xdc:3]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'fifo_rd_data[4]'. [F:/FPGA/Design/FIFO_IP/FIFO_IP.srcs/constrs_1/new/FIFO_IP.xdc:4]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/FPGA/Design/FIFO_IP/FIFO_IP.srcs/constrs_1/new/FIFO_IP.xdc:4]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'fifo_rd_data[3]'. [F:/FPGA/Design/FIFO_IP/FIFO_IP.srcs/constrs_1/new/FIFO_IP.xdc:5]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/FPGA/Design/FIFO_IP/FIFO_IP.srcs/constrs_1/new/FIFO_IP.xdc:5]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'fifo_rd_data[2]'. [F:/FPGA/Design/FIFO_IP/FIFO_IP.srcs/constrs_1/new/FIFO_IP.xdc:6]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/FPGA/Design/FIFO_IP/FIFO_IP.srcs/constrs_1/new/FIFO_IP.xdc:6]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'fifo_rd_data[1]'. [F:/FPGA/Design/FIFO_IP/FIFO_IP.srcs/constrs_1/new/FIFO_IP.xdc:7]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/FPGA/Design/FIFO_IP/FIFO_IP.srcs/constrs_1/new/FIFO_IP.xdc:7]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'fifo_rd_data[0]'. [F:/FPGA/Design/FIFO_IP/FIFO_IP.srcs/constrs_1/new/FIFO_IP.xdc:8]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/FPGA/Design/FIFO_IP/FIFO_IP.srcs/constrs_1/new/FIFO_IP.xdc:8]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+Finished Parsing XDC File [F:/FPGA/Design/FIFO_IP/FIFO_IP.srcs/constrs_1/new/FIFO_IP.xdc]
+Parsing XDC File [f:/FPGA/Design/FIFO_IP/FIFO_IP.srcs/sources_1/ip/fifo_generator_0/fifo_generator_0_clocks.xdc] for cell 'your_instance_name/U0'
+Finished Parsing XDC File [f:/FPGA/Design/FIFO_IP/FIFO_IP.srcs/sources_1/ip/fifo_generator_0/fifo_generator_0_clocks.xdc] for cell 'your_instance_name/U0'
+Sourcing Tcl File [E:/VIVADO2018/Install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'your_instance_name/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst'
+Finished Sourcing Tcl File [E:/VIVADO2018/Install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'your_instance_name/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst'
+Sourcing Tcl File [E:/VIVADO2018/Install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'your_instance_name/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst'
+Finished Sourcing Tcl File [E:/VIVADO2018/Install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'your_instance_name/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst'
+Sourcing Tcl File [E:/VIVADO2018/Install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'your_instance_name/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.gic_rst.xpm_cdc_single_inst_rrst_wr'
+Finished Sourcing Tcl File [E:/VIVADO2018/Install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'your_instance_name/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.gic_rst.xpm_cdc_single_inst_rrst_wr'
+Sourcing Tcl File [E:/VIVADO2018/Install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'your_instance_name/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.gic_rst.xpm_cdc_single_inst_wrst_rd'
+Finished Sourcing Tcl File [E:/VIVADO2018/Install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'your_instance_name/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.gic_rst.xpm_cdc_single_inst_wrst_rd'
+Sourcing Tcl File [E:/VIVADO2018/Install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_sync_rst.tcl] for cell 'your_instance_name/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.gic_rst.xpm_cdc_sync_rst_inst_wrst'
+Finished Sourcing Tcl File [E:/VIVADO2018/Install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_sync_rst.tcl] for cell 'your_instance_name/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.gic_rst.xpm_cdc_sync_rst_inst_wrst'
+Sourcing Tcl File [E:/VIVADO2018/Install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_sync_rst.tcl] for cell 'your_instance_name/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.xpm_cdc_sync_rst_inst_wrst'
+Finished Sourcing Tcl File [E:/VIVADO2018/Install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_sync_rst.tcl] for cell 'your_instance_name/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.xpm_cdc_sync_rst_inst_wrst'
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2918.086 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+current_design rtl_1
+close_design
+close_design
+reset_run synth_1
+launch_runs synth_1 -jobs 16
+[Mon Nov  2 19:25:25 2020] Launched synth_1...
+Run output will be captured here: F:/FPGA/Design/FIFO_IP/FIFO_IP.runs/synth_1/runme.log
+open_run synth_1 -name synth_1
+Design is defaulting to impl run constrset: constrs_1
+Design is defaulting to synth run part: xc7z010clg400-1
+INFO: [Project 1-454] Reading design checkpoint 'f:/FPGA/Design/FIFO_IP/FIFO_IP.srcs/sources_1/ip/fifo_generator_0/fifo_generator_0.dcp' for cell 'your_instance_name'
+INFO: [Netlist 29-17] Analyzing 1 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2018.3
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [f:/FPGA/Design/FIFO_IP/FIFO_IP.srcs/sources_1/ip/fifo_generator_0/fifo_generator_0.xdc] for cell 'your_instance_name/U0'
+Finished Parsing XDC File [f:/FPGA/Design/FIFO_IP/FIFO_IP.srcs/sources_1/ip/fifo_generator_0/fifo_generator_0.xdc] for cell 'your_instance_name/U0'
+Parsing XDC File [F:/FPGA/Design/FIFO_IP/FIFO_IP.srcs/constrs_1/new/FIFO_IP.xdc]
+WARNING: [Vivado 12-584] No ports matched 'fifo_rd_data[7]'. [F:/FPGA/Design/FIFO_IP/FIFO_IP.srcs/constrs_1/new/FIFO_IP.xdc:1]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/FPGA/Design/FIFO_IP/FIFO_IP.srcs/constrs_1/new/FIFO_IP.xdc:1]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'fifo_rd_data[6]'. [F:/FPGA/Design/FIFO_IP/FIFO_IP.srcs/constrs_1/new/FIFO_IP.xdc:2]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/FPGA/Design/FIFO_IP/FIFO_IP.srcs/constrs_1/new/FIFO_IP.xdc:2]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'fifo_rd_data[5]'. [F:/FPGA/Design/FIFO_IP/FIFO_IP.srcs/constrs_1/new/FIFO_IP.xdc:3]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/FPGA/Design/FIFO_IP/FIFO_IP.srcs/constrs_1/new/FIFO_IP.xdc:3]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'fifo_rd_data[4]'. [F:/FPGA/Design/FIFO_IP/FIFO_IP.srcs/constrs_1/new/FIFO_IP.xdc:4]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/FPGA/Design/FIFO_IP/FIFO_IP.srcs/constrs_1/new/FIFO_IP.xdc:4]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'fifo_rd_data[3]'. [F:/FPGA/Design/FIFO_IP/FIFO_IP.srcs/constrs_1/new/FIFO_IP.xdc:5]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/FPGA/Design/FIFO_IP/FIFO_IP.srcs/constrs_1/new/FIFO_IP.xdc:5]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'fifo_rd_data[2]'. [F:/FPGA/Design/FIFO_IP/FIFO_IP.srcs/constrs_1/new/FIFO_IP.xdc:6]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/FPGA/Design/FIFO_IP/FIFO_IP.srcs/constrs_1/new/FIFO_IP.xdc:6]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'fifo_rd_data[1]'. [F:/FPGA/Design/FIFO_IP/FIFO_IP.srcs/constrs_1/new/FIFO_IP.xdc:7]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/FPGA/Design/FIFO_IP/FIFO_IP.srcs/constrs_1/new/FIFO_IP.xdc:7]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'fifo_rd_data[0]'. [F:/FPGA/Design/FIFO_IP/FIFO_IP.srcs/constrs_1/new/FIFO_IP.xdc:8]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/FPGA/Design/FIFO_IP/FIFO_IP.srcs/constrs_1/new/FIFO_IP.xdc:8]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+Finished Parsing XDC File [F:/FPGA/Design/FIFO_IP/FIFO_IP.srcs/constrs_1/new/FIFO_IP.xdc]
+Parsing XDC File [f:/FPGA/Design/FIFO_IP/FIFO_IP.srcs/sources_1/ip/fifo_generator_0/fifo_generator_0_clocks.xdc] for cell 'your_instance_name/U0'
+Finished Parsing XDC File [f:/FPGA/Design/FIFO_IP/FIFO_IP.srcs/sources_1/ip/fifo_generator_0/fifo_generator_0_clocks.xdc] for cell 'your_instance_name/U0'
+Sourcing Tcl File [E:/VIVADO2018/Install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'your_instance_name/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst'
+Finished Sourcing Tcl File [E:/VIVADO2018/Install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'your_instance_name/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst'
+Sourcing Tcl File [E:/VIVADO2018/Install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'your_instance_name/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst'
+Finished Sourcing Tcl File [E:/VIVADO2018/Install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'your_instance_name/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst'
+Sourcing Tcl File [E:/VIVADO2018/Install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'your_instance_name/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.gic_rst.xpm_cdc_single_inst_rrst_wr'
+Finished Sourcing Tcl File [E:/VIVADO2018/Install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'your_instance_name/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.gic_rst.xpm_cdc_single_inst_rrst_wr'
+Sourcing Tcl File [E:/VIVADO2018/Install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'your_instance_name/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.gic_rst.xpm_cdc_single_inst_wrst_rd'
+Finished Sourcing Tcl File [E:/VIVADO2018/Install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'your_instance_name/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.gic_rst.xpm_cdc_single_inst_wrst_rd'
+Sourcing Tcl File [E:/VIVADO2018/Install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_sync_rst.tcl] for cell 'your_instance_name/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.gic_rst.xpm_cdc_sync_rst_inst_wrst'
+Finished Sourcing Tcl File [E:/VIVADO2018/Install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_sync_rst.tcl] for cell 'your_instance_name/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.gic_rst.xpm_cdc_sync_rst_inst_wrst'
+Sourcing Tcl File [E:/VIVADO2018/Install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_sync_rst.tcl] for cell 'your_instance_name/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.xpm_cdc_sync_rst_inst_wrst'
+Finished Sourcing Tcl File [E:/VIVADO2018/Install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_sync_rst.tcl] for cell 'your_instance_name/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.xpm_cdc_sync_rst_inst_wrst'
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 2918.086 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+synth_design -rtl -name rtl_1
+Command: synth_design -rtl -name rtl_1
+Starting synth_design
+Using part: xc7z010clg400-1
+Top: FIFO_IP
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 2918.086 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'FIFO_IP' [F:/FPGA/Design/FIFO_IP/FIFO_IP.srcs/sources_1/new/FIFO_IP.v:1]
+INFO: [Synth 8-6157] synthesizing module 'FIFO_WR' [F:/FPGA/Design/FIFO_IP/FIFO_IP.srcs/sources_1/new/FIFO_WR.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'FIFO_WR' (1#1) [F:/FPGA/Design/FIFO_IP/FIFO_IP.srcs/sources_1/new/FIFO_WR.v:1]
+INFO: [Synth 8-6157] synthesizing module 'FIFO_RD' [F:/FPGA/Design/FIFO_IP/FIFO_IP.srcs/sources_1/new/FIFO_RD.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'FIFO_RD' (2#1) [F:/FPGA/Design/FIFO_IP/FIFO_IP.srcs/sources_1/new/FIFO_RD.v:1]
+INFO: [Synth 8-6157] synthesizing module 'fifo_generator_0' [F:/FPGA/Design/FIFO_IP/.Xil/Vivado-11020-DESKTOP-CD1624M/realtime/fifo_generator_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'fifo_generator_0' (3#1) [F:/FPGA/Design/FIFO_IP/.Xil/Vivado-11020-DESKTOP-CD1624M/realtime/fifo_generator_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'FIFO_IP' (4#1) [F:/FPGA/Design/FIFO_IP/FIFO_IP.srcs/sources_1/new/FIFO_IP.v:1]
+WARNING: [Synth 8-3331] design FIFO_RD has unconnected port fifo_rd_data[7]
+WARNING: [Synth 8-3331] design FIFO_RD has unconnected port fifo_rd_data[6]
+WARNING: [Synth 8-3331] design FIFO_RD has unconnected port fifo_rd_data[5]
+WARNING: [Synth 8-3331] design FIFO_RD has unconnected port fifo_rd_data[4]
+WARNING: [Synth 8-3331] design FIFO_RD has unconnected port fifo_rd_data[3]
+WARNING: [Synth 8-3331] design FIFO_RD has unconnected port fifo_rd_data[2]
+WARNING: [Synth 8-3331] design FIFO_RD has unconnected port fifo_rd_data[1]
+WARNING: [Synth 8-3331] design FIFO_RD has unconnected port fifo_rd_data[0]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 2918.086 ; gain = 0.000
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 2918.086 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 2918.086 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Project 1-454] Reading design checkpoint 'f:/FPGA/Design/FIFO_IP/FIFO_IP.srcs/sources_1/ip/fifo_generator_0/fifo_generator_0.dcp' for cell 'your_instance_name'
+INFO: [Netlist 29-17] Analyzing 1 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2018.3
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-140] Inserted 2 IBUFs to IO ports without IO buffers.
+INFO: [Opt 31-141] Inserted 14 OBUFs to IO ports without IO buffers.
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [f:/FPGA/Design/FIFO_IP/FIFO_IP.srcs/sources_1/ip/fifo_generator_0/fifo_generator_0.xdc] for cell 'your_instance_name/U0'
+Finished Parsing XDC File [f:/FPGA/Design/FIFO_IP/FIFO_IP.srcs/sources_1/ip/fifo_generator_0/fifo_generator_0.xdc] for cell 'your_instance_name/U0'
+Parsing XDC File [F:/FPGA/Design/FIFO_IP/FIFO_IP.srcs/constrs_1/new/FIFO_IP.xdc]
+WARNING: [Vivado 12-584] No ports matched 'fifo_rd_data[7]'. [F:/FPGA/Design/FIFO_IP/FIFO_IP.srcs/constrs_1/new/FIFO_IP.xdc:1]
+WARNING: [Vivado 12-584] No ports matched 'fifo_rd_data[6]'. [F:/FPGA/Design/FIFO_IP/FIFO_IP.srcs/constrs_1/new/FIFO_IP.xdc:2]
+WARNING: [Vivado 12-584] No ports matched 'fifo_rd_data[5]'. [F:/FPGA/Design/FIFO_IP/FIFO_IP.srcs/constrs_1/new/FIFO_IP.xdc:3]
+WARNING: [Vivado 12-584] No ports matched 'fifo_rd_data[4]'. [F:/FPGA/Design/FIFO_IP/FIFO_IP.srcs/constrs_1/new/FIFO_IP.xdc:4]
+WARNING: [Vivado 12-584] No ports matched 'fifo_rd_data[3]'. [F:/FPGA/Design/FIFO_IP/FIFO_IP.srcs/constrs_1/new/FIFO_IP.xdc:5]
+WARNING: [Vivado 12-584] No ports matched 'fifo_rd_data[2]'. [F:/FPGA/Design/FIFO_IP/FIFO_IP.srcs/constrs_1/new/FIFO_IP.xdc:6]
+WARNING: [Vivado 12-584] No ports matched 'fifo_rd_data[1]'. [F:/FPGA/Design/FIFO_IP/FIFO_IP.srcs/constrs_1/new/FIFO_IP.xdc:7]
+WARNING: [Vivado 12-584] No ports matched 'fifo_rd_data[0]'. [F:/FPGA/Design/FIFO_IP/FIFO_IP.srcs/constrs_1/new/FIFO_IP.xdc:8]
+Finished Parsing XDC File [F:/FPGA/Design/FIFO_IP/FIFO_IP.srcs/constrs_1/new/FIFO_IP.xdc]
+WARNING: [Project 1-498] One or more constraints failed evaluation while reading constraint file [F:/FPGA/Design/FIFO_IP/FIFO_IP.srcs/constrs_1/new/FIFO_IP.xdc] and the design contains unresolved black boxes. These constraints will be read post-synthesis (as long as their source constraint file is marked as used_in_implementation) and should be applied correctly then. You should review the constraints listed in the file [.Xil/FIFO_IP_propImpl.xdc] and check the run log file to verify that these constraints were correctly applied.
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 2918.086 ; gain = 0.000
+Parsing XDC File [f:/FPGA/Design/FIFO_IP/FIFO_IP.srcs/sources_1/ip/fifo_generator_0/fifo_generator_0_clocks.xdc] for cell 'your_instance_name/U0'
+Finished Parsing XDC File [f:/FPGA/Design/FIFO_IP/FIFO_IP.srcs/sources_1/ip/fifo_generator_0/fifo_generator_0_clocks.xdc] for cell 'your_instance_name/U0'
+Sourcing Tcl File [E:/VIVADO2018/Install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'your_instance_name/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst'
+Finished Sourcing Tcl File [E:/VIVADO2018/Install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'your_instance_name/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst'
+Sourcing Tcl File [E:/VIVADO2018/Install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'your_instance_name/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst'
+Finished Sourcing Tcl File [E:/VIVADO2018/Install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'your_instance_name/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst'
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [E:/VIVADO2018/Install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/FIFO_IP_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/FIFO_IP_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Sourcing Tcl File [E:/VIVADO2018/Install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'your_instance_name/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.gic_rst.xpm_cdc_single_inst_rrst_wr'
+Finished Sourcing Tcl File [E:/VIVADO2018/Install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'your_instance_name/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.gic_rst.xpm_cdc_single_inst_rrst_wr'
+Sourcing Tcl File [E:/VIVADO2018/Install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'your_instance_name/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.gic_rst.xpm_cdc_single_inst_wrst_rd'
+Finished Sourcing Tcl File [E:/VIVADO2018/Install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'your_instance_name/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.gic_rst.xpm_cdc_single_inst_wrst_rd'
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [E:/VIVADO2018/Install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/FIFO_IP_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/FIFO_IP_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Sourcing Tcl File [E:/VIVADO2018/Install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_sync_rst.tcl] for cell 'your_instance_name/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.gic_rst.xpm_cdc_sync_rst_inst_wrst'
+Finished Sourcing Tcl File [E:/VIVADO2018/Install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_sync_rst.tcl] for cell 'your_instance_name/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.gic_rst.xpm_cdc_sync_rst_inst_wrst'
+Sourcing Tcl File [E:/VIVADO2018/Install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_sync_rst.tcl] for cell 'your_instance_name/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.xpm_cdc_sync_rst_inst_wrst'
+Finished Sourcing Tcl File [E:/VIVADO2018/Install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_sync_rst.tcl] for cell 'your_instance_name/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.xpm_cdc_sync_rst_inst_wrst'
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 2918.086 ; gain = 0.000
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 2918.086 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+RTL Elaboration Complete:  : Time (s): cpu = 00:00:06 ; elapsed = 00:00:05 . Memory (MB): peak = 2918.086 ; gain = 0.000
+19 Infos, 17 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:06 ; elapsed = 00:00:05 . Memory (MB): peak = 2918.086 ; gain = 0.000
+synth_design -rtl -name rtl_2
+Command: synth_design -rtl -name rtl_2
+Starting synth_design
+Using part: xc7z010clg400-1
+Top: FIFO_IP
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 2918.086 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'FIFO_IP' [F:/FPGA/Design/FIFO_IP/FIFO_IP.srcs/sources_1/new/FIFO_IP.v:1]
+INFO: [Synth 8-6157] synthesizing module 'FIFO_WR' [F:/FPGA/Design/FIFO_IP/FIFO_IP.srcs/sources_1/new/FIFO_WR.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'FIFO_WR' (1#1) [F:/FPGA/Design/FIFO_IP/FIFO_IP.srcs/sources_1/new/FIFO_WR.v:1]
+INFO: [Synth 8-6157] synthesizing module 'FIFO_RD' [F:/FPGA/Design/FIFO_IP/FIFO_IP.srcs/sources_1/new/FIFO_RD.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'FIFO_RD' (2#1) [F:/FPGA/Design/FIFO_IP/FIFO_IP.srcs/sources_1/new/FIFO_RD.v:1]
+INFO: [Synth 8-6157] synthesizing module 'fifo_generator_0' [F:/FPGA/Design/FIFO_IP/.Xil/Vivado-11020-DESKTOP-CD1624M/realtime/fifo_generator_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'fifo_generator_0' (3#1) [F:/FPGA/Design/FIFO_IP/.Xil/Vivado-11020-DESKTOP-CD1624M/realtime/fifo_generator_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'FIFO_IP' (4#1) [F:/FPGA/Design/FIFO_IP/FIFO_IP.srcs/sources_1/new/FIFO_IP.v:1]
+WARNING: [Synth 8-3331] design FIFO_RD has unconnected port fifo_rd_data[7]
+WARNING: [Synth 8-3331] design FIFO_RD has unconnected port fifo_rd_data[6]
+WARNING: [Synth 8-3331] design FIFO_RD has unconnected port fifo_rd_data[5]
+WARNING: [Synth 8-3331] design FIFO_RD has unconnected port fifo_rd_data[4]
+WARNING: [Synth 8-3331] design FIFO_RD has unconnected port fifo_rd_data[3]
+WARNING: [Synth 8-3331] design FIFO_RD has unconnected port fifo_rd_data[2]
+WARNING: [Synth 8-3331] design FIFO_RD has unconnected port fifo_rd_data[1]
+WARNING: [Synth 8-3331] design FIFO_RD has unconnected port fifo_rd_data[0]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 2918.086 ; gain = 0.000
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 2918.086 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 2918.086 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Project 1-454] Reading design checkpoint 'f:/FPGA/Design/FIFO_IP/FIFO_IP.srcs/sources_1/ip/fifo_generator_0/fifo_generator_0.dcp' for cell 'your_instance_name'
+INFO: [Netlist 29-17] Analyzing 1 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2018.3
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-140] Inserted 2 IBUFs to IO ports without IO buffers.
+INFO: [Opt 31-141] Inserted 14 OBUFs to IO ports without IO buffers.
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [f:/FPGA/Design/FIFO_IP/FIFO_IP.srcs/sources_1/ip/fifo_generator_0/fifo_generator_0.xdc] for cell 'your_instance_name/U0'
+Finished Parsing XDC File [f:/FPGA/Design/FIFO_IP/FIFO_IP.srcs/sources_1/ip/fifo_generator_0/fifo_generator_0.xdc] for cell 'your_instance_name/U0'
+Parsing XDC File [F:/FPGA/Design/FIFO_IP/FIFO_IP.srcs/constrs_1/new/FIFO_IP.xdc]
+WARNING: [Vivado 12-584] No ports matched 'fifo_rd_data[7]'. [F:/FPGA/Design/FIFO_IP/FIFO_IP.srcs/constrs_1/new/FIFO_IP.xdc:1]
+WARNING: [Vivado 12-584] No ports matched 'fifo_rd_data[6]'. [F:/FPGA/Design/FIFO_IP/FIFO_IP.srcs/constrs_1/new/FIFO_IP.xdc:2]
+WARNING: [Vivado 12-584] No ports matched 'fifo_rd_data[5]'. [F:/FPGA/Design/FIFO_IP/FIFO_IP.srcs/constrs_1/new/FIFO_IP.xdc:3]
+WARNING: [Vivado 12-584] No ports matched 'fifo_rd_data[4]'. [F:/FPGA/Design/FIFO_IP/FIFO_IP.srcs/constrs_1/new/FIFO_IP.xdc:4]
+WARNING: [Vivado 12-584] No ports matched 'fifo_rd_data[3]'. [F:/FPGA/Design/FIFO_IP/FIFO_IP.srcs/constrs_1/new/FIFO_IP.xdc:5]
+WARNING: [Vivado 12-584] No ports matched 'fifo_rd_data[2]'. [F:/FPGA/Design/FIFO_IP/FIFO_IP.srcs/constrs_1/new/FIFO_IP.xdc:6]
+WARNING: [Vivado 12-584] No ports matched 'fifo_rd_data[1]'. [F:/FPGA/Design/FIFO_IP/FIFO_IP.srcs/constrs_1/new/FIFO_IP.xdc:7]
+WARNING: [Vivado 12-584] No ports matched 'fifo_rd_data[0]'. [F:/FPGA/Design/FIFO_IP/FIFO_IP.srcs/constrs_1/new/FIFO_IP.xdc:8]
+Finished Parsing XDC File [F:/FPGA/Design/FIFO_IP/FIFO_IP.srcs/constrs_1/new/FIFO_IP.xdc]
+WARNING: [Project 1-498] One or more constraints failed evaluation while reading constraint file [F:/FPGA/Design/FIFO_IP/FIFO_IP.srcs/constrs_1/new/FIFO_IP.xdc] and the design contains unresolved black boxes. These constraints will be read post-synthesis (as long as their source constraint file is marked as used_in_implementation) and should be applied correctly then. You should review the constraints listed in the file [.Xil/FIFO_IP_propImpl.xdc] and check the run log file to verify that these constraints were correctly applied.
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 2918.086 ; gain = 0.000
+Parsing XDC File [f:/FPGA/Design/FIFO_IP/FIFO_IP.srcs/sources_1/ip/fifo_generator_0/fifo_generator_0_clocks.xdc] for cell 'your_instance_name/U0'
+Finished Parsing XDC File [f:/FPGA/Design/FIFO_IP/FIFO_IP.srcs/sources_1/ip/fifo_generator_0/fifo_generator_0_clocks.xdc] for cell 'your_instance_name/U0'
+Sourcing Tcl File [E:/VIVADO2018/Install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'your_instance_name/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst'
+Finished Sourcing Tcl File [E:/VIVADO2018/Install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'your_instance_name/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst'
+Sourcing Tcl File [E:/VIVADO2018/Install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'your_instance_name/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst'
+Finished Sourcing Tcl File [E:/VIVADO2018/Install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'your_instance_name/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst'
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [E:/VIVADO2018/Install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/FIFO_IP_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/FIFO_IP_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Sourcing Tcl File [E:/VIVADO2018/Install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'your_instance_name/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.gic_rst.xpm_cdc_single_inst_rrst_wr'
+Finished Sourcing Tcl File [E:/VIVADO2018/Install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'your_instance_name/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.gic_rst.xpm_cdc_single_inst_rrst_wr'
+Sourcing Tcl File [E:/VIVADO2018/Install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'your_instance_name/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.gic_rst.xpm_cdc_single_inst_wrst_rd'
+Finished Sourcing Tcl File [E:/VIVADO2018/Install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'your_instance_name/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.gic_rst.xpm_cdc_single_inst_wrst_rd'
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [E:/VIVADO2018/Install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/FIFO_IP_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/FIFO_IP_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Sourcing Tcl File [E:/VIVADO2018/Install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_sync_rst.tcl] for cell 'your_instance_name/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.gic_rst.xpm_cdc_sync_rst_inst_wrst'
+Finished Sourcing Tcl File [E:/VIVADO2018/Install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_sync_rst.tcl] for cell 'your_instance_name/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.gic_rst.xpm_cdc_sync_rst_inst_wrst'
+Sourcing Tcl File [E:/VIVADO2018/Install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_sync_rst.tcl] for cell 'your_instance_name/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.xpm_cdc_sync_rst_inst_wrst'
+Finished Sourcing Tcl File [E:/VIVADO2018/Install/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_sync_rst.tcl] for cell 'your_instance_name/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.xpm_cdc_sync_rst_inst_wrst'
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2918.086 ; gain = 0.000
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2918.086 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+RTL Elaboration Complete:  : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 2918.086 ; gain = 0.000
+19 Infos, 17 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+exit
+INFO: [Common 17-206] Exiting Vivado at Mon Nov  2 19:31:06 2020...
